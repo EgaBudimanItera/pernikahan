@@ -20,6 +20,9 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('welcome_message');
+		$data=array(
+			'page'=>'admintemplate/contohisi'
+		);
+		$this->load->view('admintemplate/wrapper',$data);
 	}
 }
