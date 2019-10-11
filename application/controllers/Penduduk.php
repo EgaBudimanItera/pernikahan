@@ -1,14 +1,13 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Welcome extends CI_Controller {
+class Penduduk extends CI_Controller {
 
-	
 	public function index()
 	{
 		$data=array(
-			'page'=>'admintemplate/contohisi',
-			'link'=>'dashboard'
+			'page'=>'admin/penduduk/listpenduduk',
+			'link'=>'mempelai'
 		);
 		$this->load->view('admintemplate/wrapper',$data);
 	}
