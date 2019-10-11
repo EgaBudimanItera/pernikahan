@@ -22,10 +22,15 @@
                 <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
                   <h6 class="m-0 font-weight-bold text-primary">Tabel Mempelai</h6>
                   <div class="dropdown no-arrow">
-                    <a href="#" role="button"  class="btn btn-primary"> Add Data
+                    <!-- <a href="#" role="button"  class="btn btn-primary"> Add Data
                       <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
-                    </a>
-                    
+                    </a> -->
+                    <a href="<?=base_url()?>penduduk/formtambah" class="btn btn-primary btn-icon-split btn-sm">
+		                <span class="icon text-white-50">
+                      		<i class="fas fa-plus"></i>
+                    	</span>
+                    	<span class="text">Tambah</span>
+		            </a>
                   </div>
                 </div>
                 <!-- Card Body -->
@@ -45,14 +50,39 @@
                   </thead>
                   
                   <tbody>
+                    <?php
+                    if(!empty($isi)){
+                    	$no=1;
+                    	foreach ($isi as $i) {
+                    ?>
                     <tr>
-                      <td>Tiger Nixon</td>
-                      <td>System Architect</td>
-                      <td>Edinburgh</td>
-                      <td>61</td>
-                      <td>2011/04/25</td>
-                      <td>$320,800</td>
+                      <td><?=$no?></td>
+                      <td><?=$i->nik?></td>
+                      <td><?=$i->namalengkap?></td>
+                      <td><?=$i->alamat?></td>
+                      <td><img src="<?=base_url()?>assets/<?=$i->foto?>"></td>
+                      <td>
+                      	
+                      	
+                      	<a href="<?=base_url()?>penduduk/ubah/<?=$i->nik?>" class="btn btn-warning btn-icon-split btn-sm">
+		                    <span class="icon text-white-50">
+		                      <i class="fas fa-exclamation-triangle"></i>
+		                    </span>
+		                    <span class="text">Ubah</span>
+		                </a>
+		                <a href="<?=base_url()?>penduduk/hapus/<?=$i->nik?>" class="btn btn-danger btn-icon-split btn-sm" onclick="return confirm('yakin akan menghapus data ini?')">
+		                    <span class="icon text-white-50">
+                      			<i class="fas fa-trash"></i>
+                    		</span>
+                    		<span class="text">Hapus</span>
+		                </a>
+                      </td>
                     </tr>
+                    <?php
+                    	$no++;}
+                    }
+                    ?>
+                    
                     
                   </tbody>
                 </table>

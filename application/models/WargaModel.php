@@ -1,23 +1,28 @@
 <?php
 class WargaModel extends CI_Model 
 {
-	public $nik;
-	public $namalengkap;
-	public $alamat;
-	public $jk;
-	public $statusnikah;
-	public $statuslain;
-	public $foto;
-
 	function simpan(){
-        $this->nik=$this->input->post('nik',true);
-        $this->namalengkap=$this->input->post('namalengkap',true);
-        $this->alamat=$this->input->post('alamat',true);
-        $this->jk=$this->input->post('jk',true);
-        $this->statusnikah=$this->input->post('statusnikah',true);
-        $this->statuslain="hidup";
+        $data=array(
+            'nik'=>$this->input->post('nik',true),
+            'namalengkap'=>$this->input->post('namalengkap',true),
+            'alamat'=>$this->input->post('alamat',true),
+            'jk'=>$this->input->post('jk',true),
+            'statusnikah'=>$this->input->post('statusnikah',true),
+            'statuslain'=>$this->input->post('statuslain',true),
+            'foto'=>''
+        );
         
-        $this->db->insert('tb_warga', $this);
+        $this->db->insert('tb_warga', $data);
         return true;
+    }
+
+    function ceknik($nik){
+        $this->db->select('*')->from('tb_warga')->like('nik','$nik');
+        return $query=$this->db->get();
+    }
+
+    function listall(){
+        $this->db->select('*')->from('tb_warga');
+        return $query=$this->db->get();
     }
 }

@@ -1,0 +1,105 @@
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+
+          <!-- Page Heading -->
+          <div class="d-sm-flex align-items-center justify-content-between mb-4">
+            <h1 class="h3 mb-0 text-gray-800">Mempelai</h1>
+            
+          </div>
+
+          <!-- Content Row -->
+         
+
+          <!-- Content Row -->
+
+          <div class="row">
+
+            <!-- Area Chart -->
+            <div class="col-xl-6 col-lg-6">
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                  <h6 class="m-0 font-weight-bold text-primary">Tambah Mempelai</h6>
+                  <div class="dropdown no-arrow">
+                    <div id="info-alert"><?=@$this->session->flashdata('msg')?></div>
+                  </div>
+                </div>
+                <!-- Card Body -->
+                <div class="card-body">
+                  <form action="<?=base_url()?>user/simpanfoto" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">NIK</label>
+                      <input type="text" class="form-control" name="nik" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan NIK sesuai KTP">
+                      
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Nama Lengkap</label>
+                      <input type="text" class="form-control" name="namalengkap" id="exampleInputPassword1" placeholder="Masukkan Nama sesuai KTP">
+                    </div>
+
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Alamat</label>
+                      <textarea name="alamat" rows="5" class="form-control"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Jenis Kelamin</label>
+                      <select name="jk" class="form-control">
+                        <option value="">--Pilih Jenis Kelamin--</option>
+                        <option value="Laki-Laki">Laki-Laki</option>
+                        <option value="Perempuan">Perempuan</option>
+                      </select>
+                    </div>  
+
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Status Nikah</label>
+                      <select name="statusnikah" class="form-control">
+                        <option value="">--Pilih Status Nikah--</option>
+                        <?php
+                        foreach($statusnikah as $s){
+                        
+                        ?>
+                        <option value="<?=$s->idstatus?>"><?=$s->namastatus?></option>
+                        <?php
+                        }
+                        ?>
+                      </select>
+                    </div>  
+
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Foto</label>
+                      <input type="file" class="form-control" name="foto" id="file1preview" accept="image/*">
+                    </div>
+
+
+                    <div class="form-group">
+                      <button type="submit" class="btn btn-primary btn-icon-split">
+                        <span class="icon text-white-50">
+                          <i class="fas fa-plus"></i>
+                        </span>
+                        <span class="text">Tambah</span>
+                      </button>
+                    </div>
+                    
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6">
+              <div class="card shadow mb-4">
+                <div class="card-body">
+                  <div class="form-group"><center>
+                      <img src="<?=base_url()?>assets/noimage.png" id="gambar1" style="width: 400px;height: 500px"  alt="Preview Gambar" /></center>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          
+
+        </div>
+        <!-- /.container-fluid -->
+
