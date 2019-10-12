@@ -39,4 +39,14 @@ class Pernikahan extends CI_Controller {
       	}
 	}
 // ================end add Data=================
+
+	// ===============detail data==================
+
+	// ===============end detail data=================
+
+
+	// ===========hapus data========================
+
+	
+	// =============end hapus data==================
 }

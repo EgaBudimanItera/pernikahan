@@ -65,13 +65,13 @@
                       <td>
                       	
                       	
-                      	<a href="#" class="btn btn-warning btn-icon-split btn-sm">
+                      	<a href="<?=base_url()?>pernikahan/formdetail/<?=$i->idnikah?>" class="btn btn-warning btn-icon-split btn-sm">
 		                    <span class="icon text-white-50">
 		                      <i class="fas fa-exclamation-triangle"></i>
 		                    </span>
 		                    <span class="text">Detail</span>
 		                </a>
-		                <a href="#" class="btn btn-danger btn-icon-split btn-sm" onclick="return confirm('yakin akan menghapus data ini?')">
+		                <a href="<?=base_url()?>pernikahan/hapus/<?=$i->idnikah?>" class="btn btn-danger btn-icon-split btn-sm" onclick="return confirm('yakin akan menghapus data ini?')">
 		                    <span class="icon text-white-50">
                       			<i class="fas fa-trash"></i>
                     		</span>
