@@ -99,7 +99,7 @@
     $( ".dropdown" ).select2({
       theme: "bootstrap"
     })
-  };
+  });
 
   $(document).ready(function(){
     
