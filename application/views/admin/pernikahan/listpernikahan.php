@@ -58,10 +58,10 @@
                     <tr>
                       <td><?=$no?></td>
                       <td><?=$i->niksuami?></td>
-                      <td></td>
+                      <td><?=$i->namasuami?></td>
                       <td><?=$i->nikistri?></td>
-                      <td></td>
-                      <td></td>
+                      <td><?=$i->namaistri?></td>
+                      <td><?=$i->tglnikah?></td>
                       <td>
                       	
                       	

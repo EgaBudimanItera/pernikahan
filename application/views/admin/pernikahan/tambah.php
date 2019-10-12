@@ -29,7 +29,7 @@
                   
                   <div class="form-group">
                     <label for="exampleInputEmail1">NIK</label>
-                    <select name="niksuamin" class="form-control simple-select2" id="niksuami">
+                    <select name="niksuami" class="form-control" id="niksuami">
                         <option value="">--Pilih--</option>
                         <?php foreach($cowo as $co){
                         ?>
@@ -41,24 +41,26 @@
                     </select>
                     
                   </div>
+
+
                   <div class="form-group">
                     <label for="exampleInputPassword1">Nama Lengkap</label>
-                    <input type="text" class="form-control" name="namalengkap" id="exampleInputPassword1" required="" placeholder="Masukkan Nama sesuai KTP">
+                    <input type="text" class="form-control" name="namalengkap" id="namasuami" required="" placeholder="Masukkan Nama sesuai KTP">
                   </div>
 
                   <div class="form-group">
                     <label for="exampleInputPassword1">Alamat</label>
-                    <textarea name="alamat" rows="5" class="form-control" required=""></textarea>
+                    <textarea name="alamat" rows="5" class="form-control" required="" id="alamatsuami"></textarea>
                   </div>
 
                   <div class="form-group">
                     <label for="exampleInputPassword1">Jenis Kelamin</label>
-                    <input type="text" class="form-control" name="namalengkap" id="exampleInputPassword1" required="" placeholder="Masukkan Nama sesuai KTP">
+                    <input type="text" class="form-control" name="jksuami" id="jksuami" required="" >
                   </div>  
 
                   
                   <div class="form-group"><center>
-                      <img src="<?=base_url()?>assets/noimage.png" id="gambar1" style="width: 400px;height: 500px"  alt="Preview Gambar" /></center>
+                      <img src="<?=base_url()?>assets/noimage.png" id="gambarsuami" style="width: 400px;height: 500px"  alt="Preview Gambar" /></center>
                   </div>
 
                   
@@ -78,30 +80,39 @@
                 </div>
                 <!-- Card Body -->
                 <div class="card-body">
-                  
                   <div class="form-group">
                     <label for="exampleInputEmail1">NIK</label>
-                    <input type="text" class="form-control" name="nik" id="exampleInputEmail1" required="" aria-describedby="emailHelp" placeholder="Masukkan NIK sesuai KTP">
+                    <select name="nikistri" class="form-control" id="nikistri" onchange="nikistri()">
+                        <option value="">--Pilih--</option>
+                        <?php foreach($cewe as $ce){
+                        ?>
+                        <option value="<?=$ce->nik?>"><?=$ce->nik?></option>
+                        <?php
+                        }?>
+                        
+                        
+                    </select>
                     
                   </div>
+                  
                   <div class="form-group">
                     <label for="exampleInputPassword1">Nama Lengkap</label>
-                    <input type="text" class="form-control" name="namalengkap" id="exampleInputPassword1" required="" placeholder="Masukkan Nama sesuai KTP">
+                    <input type="text" class="form-control" name="namalengkap" id="namaistri" required="" placeholder="Masukkan Nama sesuai KTP">
                   </div>
 
                   <div class="form-group">
                     <label for="exampleInputPassword1">Alamat</label>
-                    <textarea name="alamat" rows="5" class="form-control" required=""></textarea>
+                    <textarea name="alamat" rows="5" class="form-control" required="" id="alamatistri"></textarea>
                   </div>
 
                   <div class="form-group">
                     <label for="exampleInputPassword1">Jenis Kelamin</label>
-                    <input type="text" class="form-control" name="namalengkap" id="exampleInputPassword1" required="" placeholder="Masukkan Nama sesuai KTP">
+                    <input type="text" class="form-control" name="jkistri" id="jkistri" required="" >
                   </div>  
 
                   
                   <div class="form-group"><center>
-                      <img src="<?=base_url()?>assets/noimage.png" id="gambar1" style="width: 400px;height: 500px"  alt="Preview Gambar" /></center>
+                      <img src="<?=base_url()?>assets/noimage.png" id="gambaristri" style="width: 400px;height: 500px"  alt="Preview Gambar" /></center>
                   </div>
 
                   
@@ -124,17 +135,17 @@
                   
                   <div class="form-group">
                     <label for="exampleInputEmail1">Nama Penghulu</label>
-                    <input type="text" class="form-control" name="nik" id="exampleInputEmail1" required="" aria-describedby="emailHelp" placeholder="Masukkan Nama Penghulu">
+                    <input type="text" class="form-control" name="namapenghulu" id="exampleInputEmail1" required="" aria-describedby="emailHelp" placeholder="Masukkan Nama Penghulu">
                     
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Tanggal Pernikahan</label>
-                    <input type="text" class="form-control" name="namalengkap" id="exampleInputPassword1" required="" placeholder="">
+                    <input type="text" class="form-control" name="tglnikah" id="tglnikah" required="" placeholder="">
                   </div>
 
                   <div class="form-group">
                     <label for="exampleInputPassword1">Lokasi Pernikahan</label>
-                    <textarea name="alamat" rows="5" class="form-control" required=""></textarea>
+                    <textarea name="lokasinikah" rows="5" class="form-control" required=""></textarea>
                   </div>
 
                   <div class="form-group">

@@ -89,4 +89,12 @@ class Penduduk extends CI_Controller {
 	}
 
 	//========================end hapus data================
+
+
+	//==============get Penduduk=================
+	public function getPenduduk($nik){
+		$data=$this->WargaModel->getdata($nik)->row_array();
+        echo json_encode($data);
+	}
+	// ==========end get Penduduk=================
 }

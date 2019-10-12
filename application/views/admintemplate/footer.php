@@ -103,20 +103,56 @@
 
   $(document).ready(function(){
     
-    $("#niksuami").select2();
-    $('.simple-select2').select2({
-                theme: 'bootstrap4',
-                placeholder: "Select an option",
-                allowClear: true
-            });
+    //utils=================
+    $("#niksuami").select2({
+      theme: 'bootstrap4',
+    });
+    $("#nikistri").select2({
+      theme: 'bootstrap4',
+    });
+    $('#tglnikah').datepicker({
+     
+      format: 'yyyy-mm-dd'
+    });
+// ================================================
+    //onchange nik suami
+    //untuk event onclick barang
+    $("#niksuami").change(function () {     
+        var kode = $(this).val();
 
-            $('.simple-select2-sm').select2({
-                theme: 'bootstrap4',
-                containerCssClass: ':all:',
-                placeholder: "Select an option",
-                allowClear: true
-            });
+      $.ajax({
+          url: "<?=base_url()?>penduduk/getPenduduk/"+kode,
+          type: 'GET',
+          success: function(res) {
+              var res_ = JSON.parse(res);
+              $('#namasuami').val(res_.namalengkap);
+              $('#alamatsuami').val(res_.alamat);
+              $('#jksuami').val(res_.jk);
+              $("#gambarsuami").attr('src','<?=base_url()?>assets/'+res_.foto);
+          }
+      })
+    });
+
+// ====================================================
+    //onchange nik istri
+    //untuk event onclick barang
+    $("#nikistri").change(function () {     
+        var kode = $(this).val();
+
+      $.ajax({
+          url: "<?=base_url()?>penduduk/getPenduduk/"+kode,
+          type: 'GET',
+          success: function(res) {
+              var res_ = JSON.parse(res);
+              $('#namaistri').val(res_.namalengkap);
+              $('#alamatistri').val(res_.alamat);
+              $('#jkistri').val(res_.jk);
+              $("#gambaristri").attr('src','<?=base_url()?>assets/'+res_.foto);
+          }
+      })
+    });
   });
 
-  
+
+
 </script>

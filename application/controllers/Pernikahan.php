@@ -17,7 +17,7 @@ class Pernikahan extends CI_Controller {
 		);
 		$this->load->view('admintemplate/wrapper',$data);
 	}
-
+// ==================start add Data=========
 	public function formtambah(){
 		$data=array(
 			'page'=>'admin/pernikahan/tambah',
@@ -29,4 +29,14 @@ class Pernikahan extends CI_Controller {
 		$this->load->view('admintemplate/wrapper',$data);
 	}
 
+	public function simpan(){
+		$simpan=$this->PernikahanModel->simpan();
+		if($simpan){
+         	echo '<script>alert("Data Berhasil Disimpan");window.location = "'.base_url().'pernikahan";</script>';
+      	}	
+      	else{
+         	echo '<script>alert("Data Gagal Disimpan");window.location = "'.base_url().'pernikahan/formtambah";</script>';
+      	}
+	}
+// ================end add Data=================
 }
