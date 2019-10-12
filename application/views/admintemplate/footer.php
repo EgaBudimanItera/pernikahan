@@ -103,13 +103,8 @@
 
   $(document).ready(function(){
     
-    $("#nik").select2();
-    
-    
-  });
-
-  $(document).ready(function() {
-            $('.simple-select2').select2({
+    $("#niksuami").select2();
+    $('.simple-select2').select2({
                 theme: 'bootstrap4',
                 placeholder: "Select an option",
                 allowClear: true
@@ -121,5 +116,7 @@
                 placeholder: "Select an option",
                 allowClear: true
             });
-        });
+  });
+
+  
 </script>
