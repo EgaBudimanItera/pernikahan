@@ -21,6 +21,15 @@
   <!-- Custom styles for this page -->
   <link href="<?=base_url()?>back/vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
+
+  <!-- SELECT 2 -->
+   <!-- <link rel="stylesheet" href="<?=base_url()?>back/select2/dist/css/select2.min.css"> -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css" />
+    <link rel="stylesheet" href="<?=base_url()?>back/select2-bootstrap4/dist/select2-bootstrap4.css">
+
+  <!--DatePiker-->
+  <link href="<?=base_url()?>back/bootstrap-datepicker/css/datepicker.css" rel="stylesheet">
+
 </head>
 
 <body id="page-top">
@@ -67,8 +76,8 @@
       </li>
 
       <!-- Nav Item - Utilities Collapse Menu -->
-      <li class="nav-item">
-        <a class="nav-link" href="#" >
+      <li class="nav-item <?php if($link=='pernikahan'){echo 'active';}?>">
+        <a class="nav-link" href="<?=base_url()?>pernikahan" >
           <i class="fas fa-fw fa-wrench"></i>
           <span>Data Pernikahan</span>
         </a>

@@ -1,28 +1,92 @@
 <?php
 class WargaModel extends CI_Model 
 {
-	function simpan(){
+	public function simpan(){
+
+        $config ['upload_path'] = './assets/';
+        $config ['allowed_types'] = 'jpg|JPG|jpeg|JPEG|png|PNG';
+        $config ['max_size'] = '2048';
+        $this->load->library('upload');
+        $this->upload->initialize($config);
+
+        if(!$this->upload->do_upload('foto')){
+            echo '<div class="alert alert-danger"><a href="#" class="close" data-dismiss="alert" arial-label="close">&times;</a> '.$this->upload->display_errors().'</div>';
+         exit();
+        }
+
+        if($this->upload->do_upload('foto')){
+            $upload_data = $this->upload->data();
+            $data=array(
+                'nik'=>$this->input->post('nik',true),
+                'namalengkap'=>$this->input->post('namalengkap',true),
+                'alamat'=>$this->input->post('alamat',true),
+                'jk'=>$this->input->post('jk',true),
+                'statusnikah'=>$this->input->post('statusnikah',true),
+                'statuslain'=>$this->input->post('statuslain',true),
+                'foto'=>$upload_data['file_name'],
+            );
+        
+            $this->db->insert('tb_warga', $data);
+            return true;
+        }
+    }
+    public function ubah(){
+        $config ['upload_path'] = './assets/';
+        $config ['allowed_types'] = 'jpg|JPG|jpeg|JPEG|png|PNG';
+        $config ['max_size'] = '2048';
+        $this->load->library('upload');
+        $this->upload->initialize($config);
+        $namafile='';
+        if(!empty($_FILES['path_foto']['name'])){
+            if(!$this->upload->do_upload('foto')){
+                echo '<div class="alert alert-danger"><a href="#" class="close" data-dismiss="alert" arial-label="close">&times;</a> '.$this->upload->display_errors().'</div>';
+                exit();
+            }
+            if($this->upload->do_upload('foto')){
+                $upload_data = $this->upload->data();
+                $namafile=$upload_data['file_name'];
+            }
+        }else{
+            $namafile=$this->input->post('foto2',true);
+        }
         $data=array(
-            'nik'=>$this->input->post('nik',true),
+            
             'namalengkap'=>$this->input->post('namalengkap',true),
             'alamat'=>$this->input->post('alamat',true),
             'jk'=>$this->input->post('jk',true),
             'statusnikah'=>$this->input->post('statusnikah',true),
             'statuslain'=>$this->input->post('statuslain',true),
-            'foto'=>''
+            'foto'=>$namafile,
         );
+    
         
-        $this->db->insert('tb_warga', $data);
+        $this->db->where('nik', $this->input->post('nik',true));
+        $this->db->update('tb_warga', $data); 
         return true;
     }
 
-    function ceknik($nik){
+    public function hapus($nik){
+        $this->db->delete('tb_warga', array('nik' => $nik)); 
+        return true;
+    }
+
+    public function ceknik($nik){
         $this->db->select('*')->from('tb_warga')->like('nik','$nik');
         return $query=$this->db->get();
     }
 
-    function listall(){
+    public function listall(){
         $this->db->select('*')->from('tb_warga');
+        return $query=$this->db->get();
+    }
+
+    public function getdata($nik){
+        $this->db->select('*')->from('tb_warga')->where(array('nik'=>$nik));
+        return $query=$this->db->get();
+    }
+
+    public function getGender($tipe){
+        $this->db->select('*')->from('tb_warga')->where(array('jk'=>$tipe));
         return $query=$this->db->get();
     }
 }

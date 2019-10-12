@@ -27,25 +27,25 @@
                 </div>
                 <!-- Card Body -->
                 <div class="card-body">
-                  <form action="<?=base_url()?>user/simpanfoto" method="post" enctype="multipart/form-data">
+                  <form action="<?=base_url()?>penduduk/simpan" method="post" enctype="multipart/form-data">
                     <div class="form-group">
                       <label for="exampleInputEmail1">NIK</label>
-                      <input type="text" class="form-control" name="nik" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Masukkan NIK sesuai KTP">
+                      <input type="text" class="form-control" name="nik" id="exampleInputEmail1" required="" aria-describedby="emailHelp" placeholder="Masukkan NIK sesuai KTP">
                       
                     </div>
                     <div class="form-group">
                       <label for="exampleInputPassword1">Nama Lengkap</label>
-                      <input type="text" class="form-control" name="namalengkap" id="exampleInputPassword1" placeholder="Masukkan Nama sesuai KTP">
+                      <input type="text" class="form-control" name="namalengkap" id="exampleInputPassword1" required="" placeholder="Masukkan Nama sesuai KTP">
                     </div>
 
                     <div class="form-group">
                       <label for="exampleInputPassword1">Alamat</label>
-                      <textarea name="alamat" rows="5" class="form-control"></textarea>
+                      <textarea name="alamat" rows="5" class="form-control" required=""></textarea>
                     </div>
 
                     <div class="form-group">
                       <label for="exampleInputPassword1">Jenis Kelamin</label>
-                      <select name="jk" class="form-control">
+                      <select name="jk" class="form-control" required="">
                         <option value="">--Pilih Jenis Kelamin--</option>
                         <option value="Laki-Laki">Laki-Laki</option>
                         <option value="Perempuan">Perempuan</option>
@@ -54,7 +54,7 @@
 
                     <div class="form-group">
                       <label for="exampleInputPassword1">Status Nikah</label>
-                      <select name="statusnikah" class="form-control">
+                      <select name="statusnikah" class="form-control" required="">
                         <option value="">--Pilih Status Nikah--</option>
                         <?php
                         foreach($statusnikah as $s){
@@ -69,7 +69,7 @@
 
                     <div class="form-group">
                       <label for="exampleInputPassword1">Foto</label>
-                      <input type="file" class="form-control" name="foto" id="file1preview" accept="image/*">
+                      <input type="file" class="form-control" name="foto" id="file1preview" accept="image/*" required="">
                     </div>
 
 

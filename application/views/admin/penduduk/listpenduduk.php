@@ -60,11 +60,11 @@
                       <td><?=$i->nik?></td>
                       <td><?=$i->namalengkap?></td>
                       <td><?=$i->alamat?></td>
-                      <td><img src="<?=base_url()?>assets/<?=$i->foto?>"></td>
+                      <td><img src="<?=base_url()?>assets/<?=$i->foto?>" style="width: 100px;height: 100px;"></td>
                       <td>
                       	
                       	
-                      	<a href="<?=base_url()?>penduduk/ubah/<?=$i->nik?>" class="btn btn-warning btn-icon-split btn-sm">
+                      	<a href="<?=base_url()?>penduduk/formubah/<?=$i->nik?>" class="btn btn-warning btn-icon-split btn-sm">
 		                    <span class="icon text-white-50">
 		                      <i class="fas fa-exclamation-triangle"></i>
 		                    </span>

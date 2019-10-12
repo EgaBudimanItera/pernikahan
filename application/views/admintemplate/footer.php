@@ -62,6 +62,15 @@
   <script src="<?=base_url()?>back/vendor/datatables/jquery.dataTables.min.js"></script>
   <script src="<?=base_url()?>back/vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
+  
+  <!-- Select2 -->
+  <script src="<?=base_url()?>back/select2/dist/js/select2.full.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/js/select2.full.min.js"></script>
+
+  <!--datepicker-->
+  <script type="text/javascript" src="<?php echo base_url() ?>back/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+
+
   <!-- Page level custom scripts -->
   <script src="<?=base_url()?>back/js/demo/datatables-demo.js"></script>
 </body>
@@ -83,5 +92,34 @@
   $("#file1preview").change(function(){
       bacaGambar1(this);
   });
+
   
+  $(function () {
+    $('.select2').select2()
+    $( ".dropdown" ).select2({
+      theme: "bootstrap"
+    })
+  };
+
+  $(document).ready(function(){
+    
+    $("#nik").select2();
+    
+    
+  });
+
+  $(document).ready(function() {
+            $('.simple-select2').select2({
+                theme: 'bootstrap4',
+                placeholder: "Select an option",
+                allowClear: true
+            });
+
+            $('.simple-select2-sm').select2({
+                theme: 'bootstrap4',
+                containerCssClass: ':all:',
+                placeholder: "Select an option",
+                allowClear: true
+            });
+        });
 </script>
