@@ -135,7 +135,7 @@
                   
                   <div class="form-group">
                     <label for="exampleInputEmail1">Nama Penghulu</label>
-                    <input type="text" class="form-control" name="namapenghulu" id="exampleInputEmail1" required="" aria-describedby="emailHelp" placeholder="Masukkan Nama Penghulu">
+                    <input type="text" class="form-control" name="penghulu" id="exampleInputEmail1" required="" aria-describedby="emailHelp" placeholder="Masukkan Nama Penghulu">
                     
                   </div>
                   <div class="form-group">

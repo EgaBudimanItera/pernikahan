@@ -17,7 +17,7 @@ class Pernikahan extends CI_Controller {
 		);
 		$this->load->view('admintemplate/wrapper',$data);
 	}
-// ==================start add Data=========
+	// ==================start add Data=========
 	public function formtambah(){
 		$data=array(
 			'page'=>'admin/pernikahan/tambah',
@@ -32,21 +32,46 @@ class Pernikahan extends CI_Controller {
 	public function simpan(){
 		$simpan=$this->PernikahanModel->simpan();
 		if($simpan){
-         	echo '<script>alert("Data Berhasil Disimpan");window.location = "'.base_url().'pernikahan";</script>';
-      	}	
-      	else{
-         	echo '<script>alert("Data Gagal Disimpan");window.location = "'.base_url().'pernikahan/formtambah";</script>';
-      	}
+			echo '<script>alert("Data Berhasil Disimpan");window.location = "'.base_url().'pernikahan";</script>';
+		}	
+		else{
+			echo '<script>alert("Data Gagal Disimpan");window.location = "'.base_url().'pernikahan/formtambah";</script>';
+		}
 	}
-// ================end add Data=================
+	// ================end add Data=================
 
 	// ===============detail data==================
-
+	public function formdetail($idnikah)
+	{
+		$data=array(
+			'page'=>'admin/pernikahan/detail',
+			'link'=>'pernikahan',
+			'statusnikah'=>$this->StatusNikah->listall()->result(),
+			'isi'=>$this->PernikahanModel->getdata($idnikah)->row(),
+		);
+		$this->load->view('admintemplate/wrapper',$data);
+	}
 	// ===============end detail data=================
-
-
+	public function ubah(){
+		$ubah=$this->PernikahanModel->ubah();
+		
+		if($ubah){
+			echo '<script>alert("Data Berhasil Diubah");window.location = "'.base_url().'pernikahan";</script>';
+		}	
+		else{
+			echo '<script>alert("Data Gagal Diubah");window.location = "'.base_url().'pernikahan?>";</script>';
+		}
+	}
 	// ===========hapus data========================
-
-	
+	public function hapus($idnikah){
+		$hapus=$this->PernikahanModel->hapus($idnikah);
+		if($hapus){
+			echo '<script>alert("Data Berhasil Dihapus");window.location = "'.base_url().'pernikahan";</script>';
+		}	
+		else{
+			echo '<script>alert("Data Gagal Dihapus");window.location = "'.base_url().'pernikahan?>";</script>';
+			
+		}
+	}
 	// =============end hapus data==================
 }

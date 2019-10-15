@@ -30,12 +30,11 @@
                   <form action="<?=base_url()?>penduduk/simpan" method="post" enctype="multipart/form-data">
                     <div class="form-group">
                       <label for="exampleInputEmail1">NIK</label>
-                      <input type="text" class="form-control" name="nik" id="exampleInputEmail1" required="" aria-describedby="emailHelp" placeholder="Masukkan NIK sesuai KTP">
-                      
+                      <input type="number" class="form-control no-spinner" name="nik" id="exampleInputEmail1" required="" aria-describedby="emailHelp" placeholder="Masukkan NIK sesuai KTP" autocomplete="off">    
                     </div>
                     <div class="form-group">
                       <label for="exampleInputPassword1">Nama Lengkap</label>
-                      <input type="text" class="form-control" name="namalengkap" id="exampleInputPassword1" required="" placeholder="Masukkan Nama sesuai KTP">
+                      <input type="text" class="form-control" name="namalengkap" id="exampleInputPassword1" required="" placeholder="Masukkan Nama sesuai KTP" autocomplete="off">
                     </div>
 
                     <div class="form-group">
@@ -45,7 +44,7 @@
 
                     <div class="form-group">
                       <label for="exampleInputPassword1">Jenis Kelamin</label>
-                      <select name="jk" class="form-control" required="">
+                      <select name="jk" class="form-control select2" required="">
                         <option value="">--Pilih Jenis Kelamin--</option>
                         <option value="Laki-Laki">Laki-Laki</option>
                         <option value="Perempuan">Perempuan</option>
@@ -54,7 +53,7 @@
 
                     <div class="form-group">
                       <label for="exampleInputPassword1">Status Nikah</label>
-                      <select name="statusnikah" class="form-control" required="">
+                      <select name="statusnikah" class="form-control select2" required="">
                         <option value="">--Pilih Status Nikah--</option>
                         <?php
                         foreach($statusnikah as $s){
