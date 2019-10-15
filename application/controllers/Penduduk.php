@@ -19,8 +19,7 @@ class Penduduk extends CI_Controller {
 		$this->load->view('admintemplate/wrapper',$data);
 	}
 // =================Start add Data======================
-	public function formtambah()
-	{
+	public function formtambah() {
 		$data=array(
 			'page'=>'admin/penduduk/tambah',
 			'link'=>'mempelai',
@@ -32,22 +31,19 @@ class Penduduk extends CI_Controller {
 	public function simpan(){
 		$jumlahnik=$this->WargaModel->ceknik($this->input->post('nik',true))->num_rows();
 		
-        if($jumlahnik=='0'){
-            $simpan=$this->WargaModel->simpan();
-			if($simpan){
-	         	echo '<script>alert("Data Berhasil Disimpan");window.location = "'.base_url().'penduduk";</script>';
-	      	}	
-	      	else{
-	         	echo '<script>alert("Data Gagal Disimpan");window.location = "'.base_url().'penduduk/formtambah";</script>';
-	      	}
-        }else{
-        	echo '<script>alert("Data Gagal Disimpan!! NIK Sudah Terdaftar");window.location = "'.base_url().'penduduk/formtambah";</script>';
-        	
-        }
-
-		
+		if($jumlahnik=='0'){
+			$simpan=$this->WargaModel->simpan();
+				if($simpan){
+					echo '<script>alert("Data Berhasil Disimpan");window.location = "'.base_url().'penduduk";</script>';
+				}	
+				else{
+					echo '<script>alert("Data Gagal Disimpan");window.location = "'.base_url().'penduduk/formtambah";</script>';
+				}
+		}else{
+			echo '<script>alert("Data Gagal Disimpan!! NIK Sudah Terdaftar");window.location = "'.base_url().'penduduk/formtambah";</script>';
+		}
 	}
-// ======================End ADD Data========================
+	// ======================End ADD Data========================
 
 	// ======================start Edit Data==========================
 
@@ -65,12 +61,11 @@ class Penduduk extends CI_Controller {
 	public function ubah(){
 		$ubah=$this->WargaModel->ubah();
 		if($ubah){
-         	echo '<script>alert("Data Berhasil Diubah");window.location = "'.base_url().'penduduk";</script>';
-      	}	
-      	else{
-         	echo '<script>alert("Data Gagal Diubah");window.location = "'.base_url().'penduduk?>";</script>';
-         
-      	}
+			echo '<script>alert("Data Berhasil Diubah");window.location = "'.base_url().'penduduk";</script>';
+		}	
+		else{
+			echo '<script>alert("Data Gagal Diubah");window.location = "'.base_url().'penduduk?>";</script>';
+		}
 	}
 	// ======================End Edit Data==========================
 

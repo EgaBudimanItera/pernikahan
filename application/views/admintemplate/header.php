@@ -23,9 +23,10 @@
 
 
   <!-- SELECT 2 -->
-    <link rel="stylesheet" href="<?=base_url()?>back/select2/dist/css/select2.min.css"> 
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css" />
-    <link rel="stylesheet" href="<?=base_url()?>back/select2-bootstrap4/dist/select2-bootstrap4.css">
+  <link rel="stylesheet" href="<?=base_url()?>back/select2/dist/css/select2.min.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.5/css/select2.min.css" />
+  <link rel="stylesheet" href="<?=base_url()?>back/select2-bootstrap4/dist/select2-bootstrap4.css">
+  <link rel="stylesheet" href="<?=base_url()?>assets/css/styles.scss">
 
   <!--DatePiker-->
   <link href="<?=base_url()?>back/bootstrap-datepicker/css/datepicker.css" rel="stylesheet">

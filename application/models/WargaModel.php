@@ -11,10 +11,9 @@ class WargaModel extends CI_Model
 
         if(!$this->upload->do_upload('foto')){
             echo '<div class="alert alert-danger"><a href="#" class="close" data-dismiss="alert" arial-label="close">&times;</a> '.$this->upload->display_errors().'</div>';
-         exit();
+            exit();
         }
-
-        if($this->upload->do_upload('foto')){
+        else {
             $upload_data = $this->upload->data();
             $data=array(
                 'nik'=>$this->input->post('nik',true),
@@ -37,18 +36,19 @@ class WargaModel extends CI_Model
         $this->load->library('upload');
         $this->upload->initialize($config);
         $namafile='';
-        if(!empty($_FILES['path_foto']['name'])){
-            if(!$this->upload->do_upload('foto')){
-                echo '<div class="alert alert-danger"><a href="#" class="close" data-dismiss="alert" arial-label="close">&times;</a> '.$this->upload->display_errors().'</div>';
-                exit();
-            }
-            if($this->upload->do_upload('foto')){
-                $upload_data = $this->upload->data();
-                $namafile=$upload_data['file_name'];
-            }
-        }else{
+        
+        if(!$this->upload->do_upload('foto')){
+            echo '<div class="alert alert-danger"><a href="#" class="close" data-dismiss="alert" arial-label="close">&times;</a> '.$this->upload->display_errors().'</div>';
+            exit();
+        }
+
+        if($this->upload->do_upload('foto')){
+            $upload_data = $this->upload->data();
+            $namafile=$upload_data['file_name'];
+        } else {
             $namafile=$this->input->post('foto2',true);
         }
+            
         $data=array(
             
             'namalengkap'=>$this->input->post('namalengkap',true),
