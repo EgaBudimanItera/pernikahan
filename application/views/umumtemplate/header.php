@@ -177,14 +177,14 @@
                 <nav>
                   <ul class="nav topnav">
                     <li class="dropdown active">
-                      <a href="#">Home </a>
+                      <a href="<?=base_url()?>">Home </a>
                       <!-- <ul class="dropdown-menu">
                         <li><a href="index-alt2.html">Homepage 2</a></li>
                         <li><a href="index-alt3.html">Homepage 3</a></li>
                       </ul> -->
                     </li>
                     <li class="dropdown">
-                      <a href="#">Pencarian Status Pernikahan</a>
+                      <a href="<?=base_url()?>pencarian">Pencarian Status Pernikahan</a>
                       
                     </li>
                     <li class="dropdown">
@@ -192,8 +192,7 @@
                       
                     </li>
                     <li class="dropdown">
-                      <a href="#">About Us </i></a>
-                     
+                      <a href="#">Tentang </i></a>
                     </li>
                     
                     <li>
@@ -209,54 +208,3 @@
       </div>
     </header>
     <!-- end header -->
-    <section id="featured">
-      <!-- start slider -->
-      <!-- Slider -->
-      <div id="nivo-slider">
-        <div class="nivo-slider" style="max-height: 450px">
-          <!-- Slide #1 image -->
-          <img src="<?=base_url()?>front/img/slides/banner/1.jpg" alt="" title="#caption-1" />
-          <!-- Slide #2 image -->
-          <img src="<?=base_url()?>front/img/slides/banner/2.jpg" alt="" title="#caption-2" />
-          <!-- Slide #3 image -->
-          <img src="<?=base_url()?>front/img/slides/banner/3.jpg" alt="" title="#caption-3" />
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="span12">
-              <!-- Slide #1 caption -->
-              <div class="nivo-caption" id="caption-1">
-                <div>
-                  <h2>Awesome <strong>features</strong></h2>
-                  <p>
-                    Lorem ipsum dolor sit amet nsectetuer nec Vivamus. Curabitu laoreet amet eget. Viurab oremd ellentesque ameteget. Lorem ipsum dolor sit amet nsectetuer nec vivamus.
-                  </p>
-                  <a href="#" class="btn btn-theme">Read More</a>
-                </div>
-              </div>
-              <!-- Slide #2 caption -->
-              <div class="nivo-caption" id="caption-2">
-                <div>
-                  <h2>Fully <strong>responsive</strong></h2>
-                  <p>
-                    Lorem ipsum dolor sit amet nsectetuer nec Vivamus. Curabitu laoreet amet eget. Viurab oremd ellentesque ameteget. Lorem ipsum dolor sit amet nsectetuer nec vivamus.
-                  </p>
-                  <a href="#" class="btn btn-theme">Read More</a>
-                </div>
-              </div>
-              <!-- Slide #3 caption -->
-              <div class="nivo-caption" id="caption-3">
-                <div>
-                  <h2>Very <strong>customizable</strong></h2>
-                  <p>
-                    Lorem ipsum dolor sit amet nsectetuer nec Vivamus. Curabitu laoreet amet eget. Viurab oremd ellentesque ameteget. Lorem ipsum dolor sit amet nsectetuer nec vivamus.
-                  </p>
-                  <a href="#" class="btn btn-theme">Read More</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end slider -->
-    </section>

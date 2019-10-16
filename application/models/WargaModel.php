@@ -89,4 +89,8 @@ class WargaModel extends CI_Model
         $this->db->select('*')->from('tb_warga')->where(array('jk'=>$tipe));
         return $query=$this->db->get();
     }
+
+	function getRandomData() {
+		return $query = $this->db->query("SELECT * FROM  tb_warga ORDER BY RAND() LIMIT 0,8");
+    }
 }
