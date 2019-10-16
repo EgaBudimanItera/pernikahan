@@ -60,4 +60,20 @@ class PernikahanModel extends CI_Model
 		);
 	}
 
+	function getRandomData() {
+		return $query = $this->db->query(
+			"SELECT 
+				p.*, 
+				wl.nik AS niksuami, wl.namalengkap AS namasuami, wl.foto AS fotosuami, wl.alamat AS alamatsuami,
+				wp.nik AS nikistri, wp.namalengkap AS namaistri, wp.foto AS fotoistri, wp.alamat AS alamatsuami
+			FROM 
+				tb_pernikahan p 
+				INNER JOIN 
+					tb_warga wl ON p.niksuami = wl.nik 
+				INNER JOIN 
+					tb_warga wp ON p.nikistri = wp.nik 
+			ORDER BY RAND() LIMIT 0,8
+		");
+	}
+
 }

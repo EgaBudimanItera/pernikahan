@@ -5,7 +5,7 @@
           <div class="span12">
             <div class="big-cta">
               <div class="cta-text">
-                <h3>Kami Telah Melayani Pernikahan Sebanyak  <span class="highlight"><strong>5000 Pernikahan</strong></span> this year!</h3>
+                <h3>Kami Telah Melayani Pernikahan Sebanyak  <span class="highlight"><strong>5000 Pernikahan</strong></span> Tahun Ini!</h3>
               </div>
               
             </div>
@@ -92,94 +92,32 @@
             <div class="row">
               <section id="projects">
                 <ul id="thumbs" class="portfolio">
+                
+                <?php foreach ($isi as $key => $data) {;?>
+                
                   <!-- Item Project and Filter Name -->
-                  <li class="item-thumbs span3 design" data-id="id-0" data-type="web">
+                  <li class="item-thumbs span3 design" data-id="id-<?= $key; ?>" data-type="web">
                     <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The City" href="img/works/full/image-01-full.jpg">
-            <span class="overlay-img"></span>
-            <span class="overlay-img-thumb font-icon-plus"></span>
-            </a>
+                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Pernikahan" href="<?=base_url()?>assets/<?= $data->fotosuami ?>">
+                      <span class="overlay-img"></span>
+                      <span class="overlay-img-thumb font-icon-plus"></span>
+                    </a>
+                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Pernikahan" href="<?=base_url()?>assets/<?= $data->fotoistri ?>">
+                      <span class="overlay-img"></span>
+                      <span class="overlay-img-thumb font-icon-plus"></span>
+                    </a>
                     <!-- Thumb Image and Description -->
-                    <img src="img/works/thumbs/image-01.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
+                    <div class="row" style="display: inline-flex;">
+                      <div class="col-md-6">
+                        <img src="<?=base_url()?>assets/<?= $data->fotosuami ?>" alt="<?= $data->namasuami; ?> dan <?= $data->namaistri; ?>">
+                      </div>
+                      <div class="col-md-6">
+                        <img src="<?=base_url()?>assets/<?= $data->fotoistri ?>" alt="<?= $data->namasuami; ?> dan <?= $data->namaistri; ?>">
+                      </div>
+                    </div>
                   </li>
                   <!-- End Item Project -->
-                  <!-- Item Project and Filter Name -->
-                  <li class="item-thumbs span3 design" data-id="id-1" data-type="icon">
-                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Office" href="img/works/full/image-02-full.jpg">
-            <span class="overlay-img"></span>
-            <span class="overlay-img-thumb font-icon-plus"></span>
-            </a>
-                    <!-- Thumb Image and Description -->
-                    <img src="img/works/thumbs/image-02.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                  </li>
-                  <!-- End Item Project -->
-                  <!-- Item Project and Filter Name -->
-                  <li class="item-thumbs span3 photography" data-id="id-2" data-type="illustrator">
-                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Mountains" href="img/works/full/image-03-full.jpg">
-            <span class="overlay-img"></span>
-            <span class="overlay-img-thumb font-icon-plus"></span>
-            </a>
-                    <!-- Thumb Image and Description -->
-                    <img src="img/works/thumbs/image-03.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                  </li>
-                  <!-- End Item Project -->
-                  <!-- Item Project and Filter Name -->
-                  <li class="item-thumbs span3 photography" data-id="id-2" data-type="illustrator">
-                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Mountains" href="img/works/full/image-04-full.jpg">
-            <span class="overlay-img"></span>
-            <span class="overlay-img-thumb font-icon-plus"></span>
-            </a>
-                    <!-- Thumb Image and Description -->
-                    <img src="img/works/thumbs/image-04.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                  </li>
-                  <!-- End Item Project -->
-                  <!-- Item Project and Filter Name -->
-                  <li class="item-thumbs span3 photography" data-id="id-4" data-type="web">
-                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Sea" href="img/works/full/image-05-full.jpg">
-            <span class="overlay-img"></span>
-            <span class="overlay-img-thumb font-icon-plus"></span>
-            </a>
-                    <!-- Thumb Image and Description -->
-                    <img src="img/works/thumbs/image-05.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                  </li>
-                  <!-- End Item Project -->
-                  <!-- Item Project and Filter Name -->
-                  <li class="item-thumbs span3 photography" data-id="id-5" data-type="icon">
-                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="Clouds" href="img/works/full/image-06-full.jpg">
-            <span class="overlay-img"></span>
-            <span class="overlay-img-thumb font-icon-plus"></span>
-            </a>
-                    <!-- Thumb Image and Description -->
-                    <img src="img/works/thumbs/image-06.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                  </li>
-                  <!-- End Item Project -->
-                  <!-- Item Project and Filter Name -->
-                  <li class="item-thumbs span3 photography" data-id="id-2" data-type="illustrator">
-                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Mountains" href="img/works/full/image-07-full.jpg">
-            <span class="overlay-img"></span>
-            <span class="overlay-img-thumb font-icon-plus"></span>
-            </a>
-                    <!-- Thumb Image and Description -->
-                    <img src="img/works/thumbs/image-07.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                  </li>
-                  <!-- End Item Project -->
-                  <!-- Item Project and Filter Name -->
-                  <li class="item-thumbs span3 design" data-id="id-0" data-type="web">
-                    <!-- Fancybox - Gallery Enabled - Title - Full Image -->
-                    <a class="hover-wrap fancybox" data-fancybox-group="gallery" title="The Dark" href="img/works/full/image-08-full.jpg">
-            <span class="overlay-img"></span>
-            <span class="overlay-img-thumb font-icon-plus"></span>
-            </a>
-                    <!-- Thumb Image and Description -->
-                    <img src="img/works/thumbs/image-08.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus quis elementum odio. Curabitur pellentesque, dolor vel pharetra mollis.">
-                  </li>
-                  <!-- End Item Project -->
+                <?php }; ?>
                 </ul>
               </section>
             </div>

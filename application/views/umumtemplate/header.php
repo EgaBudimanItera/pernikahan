@@ -213,13 +213,13 @@
       <!-- start slider -->
       <!-- Slider -->
       <div id="nivo-slider">
-        <div class="nivo-slider">
+        <div class="nivo-slider" style="max-height: 450px">
           <!-- Slide #1 image -->
-          <img src="<?=base_url()?>front/img/slides/nivo/bg-1.jpg" alt="" title="#caption-1" />
+          <img src="<?=base_url()?>front/img/slides/banner/1.jpg" alt="" title="#caption-1" />
           <!-- Slide #2 image -->
-          <img src="<?=base_url()?>front/img/slides/nivo/bg-2.jpg" alt="" title="#caption-2" />
+          <img src="<?=base_url()?>front/img/slides/banner/2.jpg" alt="" title="#caption-2" />
           <!-- Slide #3 image -->
-          <img src="<?=base_url()?>front/img/slides/nivo/bg-3.jpg" alt="" title="#caption-3" />
+          <img src="<?=base_url()?>front/img/slides/banner/3.jpg" alt="" title="#caption-3" />
         </div>
         <div class="container">
           <div class="row">
