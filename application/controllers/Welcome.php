@@ -8,13 +8,21 @@ class Welcome extends CI_Controller {
 		$this->load->model(array('PernikahanModel'));
 	}
 	
-	public function index()
-	{
+	public function index() {
 		$data=array(
 			'page'=>'umumtemplate/contohisi',
-			'link'=>'',
+			'link'=>'/',
 			'isi'=>$this->PernikahanModel->getRandomData()->result(),
 		);
 		$this->load->view('umumtemplate/wrapper',$data);
+	}
+	
+	public function pencarian() {
+		$data=array(
+			'page'=>'umumtemplate/pencarian',
+			'link'=>'/pencarian',
+			'isi'=>$this->PernikahanModel->getRandomData()->result(),
+		);
+		$this->load->view('umumtemplate/pencarian',$data);
 	}
 }
