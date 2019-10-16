@@ -1429,6 +1429,11 @@ font-weight:600;
           border-radius: 2px;
 }
 
+.no-spinner::-webkit-inner-spin-button, 
+.no-spinner::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
 
 
 
