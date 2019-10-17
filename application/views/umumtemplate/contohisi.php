@@ -15,7 +15,7 @@
           <div class="row">
             <div class="span12">
               <!-- Slide #1 caption -->
-              <div class="nivo-caption" id="caption-1">
+              <!-- <div class="nivo-caption" id="caption-1">
                 <div>
                   <h2>Awesome <strong>features</strong></h2>
                   <p>
@@ -23,9 +23,9 @@
                   </p>
                   <a href="#" class="btn btn-theme">Read More</a>
                 </div>
-              </div>
+              </div> -->
               <!-- Slide #2 caption -->
-              <div class="nivo-caption" id="caption-2">
+              <!-- <div class="nivo-caption" id="caption-2">
                 <div>
                   <h2>Fully <strong>responsive</strong></h2>
                   <p>
@@ -33,9 +33,9 @@
                   </p>
                   <a href="#" class="btn btn-theme">Read More</a>
                 </div>
-              </div>
+              </div> -->
               <!-- Slide #3 caption -->
-              <div class="nivo-caption" id="caption-3">
+              <!-- <div class="nivo-caption" id="caption-3">
                 <div>
                   <h2>Very <strong>customizable</strong></h2>
                   <p>
@@ -43,7 +43,7 @@
                   </p>
                   <a href="#" class="btn btn-theme">Read More</a>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -77,7 +77,7 @@
                   <div class="text">
                     <h6>Administrasi Pernikahan</h6>
                     <p>
-                      Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea facilisis.
+                      
                     </p>
                     <!-- <a href="#">Learn more</a> -->
                   </div>
@@ -91,7 +91,7 @@
                   <div class="text">
                     <h6>Pelayanan Ramah</h6>
                     <p>
-                      Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea facilisis.
+                      <!-- Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea facilisis. -->
                     </p>
                     <!-- <a href="#">Learn more</a> -->
                   </div>
@@ -105,7 +105,7 @@
                   <div class="text">
                     <h6>Bebas Pungli</h6>
                     <p>
-                      Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea facilisis.
+                      <!-- Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea facilisis. -->
                     </p>
                    <!--  <a href="#">Learn more</a> -->
                   </div>
@@ -119,7 +119,7 @@
                   <div class="text">
                     <h6>Ibadah</h6>
                     <p>
-                      Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea facilisis.
+                      <!-- Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea facilisis. -->
                     </p>
                     <!-- <a href="#">Learn more</a> -->
                   </div>

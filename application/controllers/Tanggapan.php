@@ -12,6 +12,7 @@ class Tanggapan extends CI_Controller {
 		$data=array(
 			'page'=>'umumtemplate/tanggapan',
 			'link'=>'/tanggapan',
+			'link2'=>'tanggapan'
 		);
 		$this->load->view('umumtemplate/tanggapan',$data);
 	}  

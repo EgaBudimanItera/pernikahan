@@ -12,6 +12,7 @@ class Pencarian extends CI_Controller {
 		$data=array(
 			'page'=>'umumtemplate/pencarian',
 			'link'=>'/pencarian',
+			'link2'=>'pencarian',
 			'isi'=>$this->WargaModel->getRandomData()->result(),
 		);
 		$this->load->view('umumtemplate/pencarian',$data);

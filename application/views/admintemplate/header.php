@@ -54,7 +54,7 @@
 
       <!-- Nav Item - Dashboard -->
       <li class="nav-item <?php if($link=='dashboard'){echo 'active';}?>">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="<?=base_url()?>dashboardadmin">
           <i class="fas fa-fw fa-tachometer-alt"></i>
           <span>Dashboard</span></a>
       </li>
@@ -122,7 +122,7 @@
           <span>User</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="<?=base_url()?>login/logout">
           <i class="fas fa-fw fa-table"></i>
           <span>Logout</span></a>
       </li>

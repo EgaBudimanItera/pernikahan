@@ -167,7 +167,7 @@
         <div class="row">
           <div class="span4">
             <div class="logo">
-              <a href="index.html"><img src="<?=base_url()?>front/img/logo.png" alt="" class="logo" /></a>
+              <a href="index.html"><!-- <img src="<?=base_url()?>front/img/logo.png" alt="" class="logo" /> --></a>
               <!-- <h1>Flat and trendy bootstrap template</h1> -->
             </div>
           </div>
@@ -176,28 +176,28 @@
               <div class="navigation">
                 <nav>
                   <ul class="nav topnav">
-                    <li class="dropdown active">
+                    <li class="dropdown <?php if($link2=="home"){echo "active";}?>">
                       <a href="<?=base_url()?>">Home </a>
                       <!-- <ul class="dropdown-menu">
                         <li><a href="index-alt2.html">Homepage 2</a></li>
                         <li><a href="index-alt3.html">Homepage 3</a></li>
                       </ul> -->
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown <?php if($link2=="pencarian"){echo "active";}?>">
                       <a href="<?=base_url()?>pencarian">Pencarian Status Pernikahan</a>
                       
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown <?php if($link2=="tanggapan"){echo "active";}?>">
                       <a href="<?=base_url()?>tanggapan">Beri Tanggapan </i></a>
                       
                     </li>
-                    <li class="dropdown">
+                    <!-- <li class="dropdown">
                       <a href="#">Tentang </i></a>
                     </li>
                     
                     <li>
                       <a href="#">Kontak </a>
-                    </li>
+                    </li> -->
                   </ul>
                 </nav>
               </div>
