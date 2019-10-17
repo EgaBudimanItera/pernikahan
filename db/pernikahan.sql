@@ -16,6 +16,27 @@
 CREATE DATABASE IF NOT EXISTS `db_pernikahan` /*!40100 DEFAULT CHARACTER SET latin1 */;
 USE `db_pernikahan`;
 
+-- Dumping structure for table db_pernikahan.tb_pencarian
+CREATE TABLE IF NOT EXISTS `tb_pencarian` (
+  `idpencarian` int(11) NOT NULL AUTO_INCREMENT,
+  `nikcari` varchar(40) DEFAULT NULL,
+  `tglcari` datetime DEFAULT NULL,
+  PRIMARY KEY (`idpencarian`)
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+
+-- Dumping data for table db_pernikahan.tb_pencarian: ~2 rows (approximately)
+DELETE FROM `tb_pencarian`;
+/*!40000 ALTER TABLE `tb_pencarian` DISABLE KEYS */;
+INSERT INTO `tb_pencarian` (`idpencarian`, `nikcari`, `tglcari`) VALUES
+	(1, '1234', '2019-10-16 18:57:16'),
+	(2, '1234', '2019-10-16 19:01:19'),
+	(3, '232333', '2019-10-17 15:53:12'),
+	(4, '4543', '2019-10-17 15:53:15'),
+	(5, '11', '2019-10-17 15:53:17'),
+	(6, '1', '2019-10-17 15:53:20'),
+	(7, '1', '2019-10-17 15:58:19');
+/*!40000 ALTER TABLE `tb_pencarian` ENABLE KEYS */;
+
 -- Dumping structure for table db_pernikahan.tb_pernikahan
 CREATE TABLE IF NOT EXISTS `tb_pernikahan` (
   `idnikah` int(11) NOT NULL AUTO_INCREMENT,
@@ -28,12 +49,12 @@ CREATE TABLE IF NOT EXISTS `tb_pernikahan` (
   PRIMARY KEY (`idnikah`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
 
--- Dumping data for table db_pernikahan.tb_pernikahan: ~2 rows (approximately)
+-- Dumping data for table db_pernikahan.tb_pernikahan: ~3 rows (approximately)
 DELETE FROM `tb_pernikahan`;
 /*!40000 ALTER TABLE `tb_pernikahan` DISABLE KEYS */;
 INSERT INTO `tb_pernikahan` (`idnikah`, `niksuami`, `nikistri`, `tglnikah`, `penghulu`, `statusnikah`, `lokasinikah`) VALUES
 	(2, '1234567890', '0987654321', '2019-10-06', 'Penghulu 1', '2', 'Bandar Lampung'),
-	(3, '1234567890', '3434343434', '2019-10-16', 'Penghulu 2', '2', '-'),
+	(3, '1234567890', '3434343434', '2019-10-16', 'Penghulu 2', '5', '-'),
 	(4, '22323232455', '2322424244', '2019-09-30', 'Penghulu 3', '2', 'w');
 /*!40000 ALTER TABLE `tb_pernikahan` ENABLE KEYS */;
 
@@ -62,11 +83,24 @@ CREATE TABLE IF NOT EXISTS `tb_tanggapan` (
   `namalengkap` varchar(40) DEFAULT NULL,
   `isitanggapan` text,
   PRIMARY KEY (`idtanggapan`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
 
 -- Dumping data for table db_pernikahan.tb_tanggapan: ~0 rows (approximately)
 DELETE FROM `tb_tanggapan`;
 /*!40000 ALTER TABLE `tb_tanggapan` DISABLE KEYS */;
+INSERT INTO `tb_tanggapan` (`idtanggapan`, `nik`, `namalengkap`, `isitanggapan`) VALUES
+	(5, '22222222222222222', 'sadasdasd', 'asdasdsad'),
+	(6, '24342342342342342', 'Laki Laki 1', 'asdasd'),
+	(7, '232323232323', 'asasa', 'asas'),
+	(8, '111111111111', 'asdasd', 'asdad'),
+	(9, '2323232323', 'adsad', 'asda'),
+	(10, '223233232323', 'adsd', 'asad'),
+	(11, '12121212212122', 'aadasd', 'sdsad'),
+	(12, '111111111111111', 'adsadsa', 'asdasd'),
+	(13, '111111111111111', 'sadsad', 'asdasd'),
+	(14, '111111111111111', 'sadsad', 'asdasd'),
+	(15, '111111111111111', 'sadsad', 'asdasd'),
+	(16, '2323232323', 'asdsad', 'asdasd');
 /*!40000 ALTER TABLE `tb_tanggapan` ENABLE KEYS */;
 
 -- Dumping structure for table db_pernikahan.tb_user
@@ -96,7 +130,7 @@ CREATE TABLE IF NOT EXISTS `tb_warga` (
   PRIMARY KEY (`nik`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- Dumping data for table db_pernikahan.tb_warga: ~2 rows (approximately)
+-- Dumping data for table db_pernikahan.tb_warga: ~9 rows (approximately)
 DELETE FROM `tb_warga`;
 /*!40000 ALTER TABLE `tb_warga` DISABLE KEYS */;
 INSERT INTO `tb_warga` (`nik`, `namalengkap`, `alamat`, `jk`, `statusnikah`, `statuslain`, `foto`) VALUES
