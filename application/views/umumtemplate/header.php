@@ -188,7 +188,7 @@
                       
                     </li>
                     <li class="dropdown">
-                      <a href="#">Beri Tanggapan </i></a>
+                      <a href="<?=base_url()?>tanggapan">Beri Tanggapan </i></a>
                       
                     </li>
                     <li class="dropdown">
