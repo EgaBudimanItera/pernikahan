@@ -57,4 +57,8 @@ class PencarianModel extends CI_Model {
 						DESC
 		");
 	}
+
+	function getCount() {
+		return $query = $this->db->query("SELECT COUNT(*) as jumlah FROM  tb_pencarian");
+    }
 }

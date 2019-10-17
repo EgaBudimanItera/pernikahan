@@ -117,7 +117,7 @@
 
       <!-- Nav Item - Tables -->
       <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="<?=base_url()?>user">
           <i class="fas fa-fw fa-table"></i>
           <span>User</span></a>
       </li>

@@ -16,4 +16,8 @@ class TanggapanModel extends CI_Model {
 		$this->db->insert('tb_tanggapan', $data);
 		return true;
 	}
+
+	function getCount() {
+		return $query = $this->db->query("SELECT COUNT(*) as jumlah FROM  tb_tanggapan");
+    }
 }

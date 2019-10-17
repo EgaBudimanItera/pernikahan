@@ -93,4 +93,8 @@ class WargaModel extends CI_Model
 	function getRandomData() {
 		return $query = $this->db->query("SELECT * FROM  tb_warga ORDER BY RAND() LIMIT 0,8");
     }
+
+	function getCount() {
+		return $query = $this->db->query("SELECT COUNT(*) as jumlah FROM  tb_warga");
+    }
 }

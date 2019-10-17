@@ -76,4 +76,8 @@ class PernikahanModel extends CI_Model
 		");
 	}
 
+	function getCount() {
+		return $query = $this->db->query("SELECT COUNT(*) as jumlah FROM  tb_pernikahan");
+    }
+
 }
