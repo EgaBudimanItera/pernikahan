@@ -4,7 +4,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Pernikahan extends CI_Controller {
 	public function __construct(){
 		parent::__construct();
-		$this->load->model(array('WargaModel','StatusNikah','PernikahanModel'));
+		$this->load->model(array('WargaModel','StatusNikah','PernikahanModel','UserModel'));
+		if($this->session->userdata('status') != "login"){
+		    echo '<script>alert("Maaf, anda harus login terlebih dahulu");window.location = "'.base_url().'login";</script>';
+		}else{
+	       $iduser = $this->session->userdata('iduser');
+	       $where=array('id_user'=>$iduser);
+	       $cek=$this->UserModel->cek_login($where)->num_rows(); 
+	       if($cek == 0){
+	           echo '<script>alert("User tidak ditemukan di database");window.location = "'.base_url().'login";</script>';
+	       }
+		}  
         
 	}
 

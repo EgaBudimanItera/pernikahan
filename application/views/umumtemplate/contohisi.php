@@ -5,9 +5,9 @@
       <div id="nivo-slider">
         <div class="nivo-slider" style="max-height: 450px">
           <!-- Slide #1 image -->
-          <img src="<?=base_url()?>front/img/slides/banner/1.jpg" alt="" title="#caption-1" />
+          <img src="<?=base_url()?>front/img/slides/banner/1.jpg" class"img-responsive" alt="" title="#caption-1" />
           <!-- Slide #2 image -->
-          <img src="<?=base_url()?>front/img/slides/banner/2.jpg" alt="" title="#caption-2" />
+          <img src="<?=base_url()?>front/img/slides/banner/2.jpg" alt=" " title="#caption-2" />
           <!-- Slide #3 image -->
           <img src="<?=base_url()?>front/img/slides/banner/3.jpg" alt="" title="#caption-3" />
         </div>
