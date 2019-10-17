@@ -25,5 +25,14 @@ class Tanggapan extends CI_Controller {
 		else{
 			echo '<script>alert("Tanggapan Gagal Dikirim");window.location = "'.base_url().'tanggapan";</script>';
 		}
+  }
+  
+	public function warga(){
+		$data=array(
+			'page'=>'admin/tanggapan/listtanggapan',
+			'link'=>'tanggapan/warga',
+			'isi'=>$this->TanggapanModel->listall()->result(),
+		);
+		$this->load->view('admintemplate/wrapper',$data);
 	}
 }

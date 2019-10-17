@@ -45,5 +45,16 @@ class PencarianModel extends CI_Model {
 					tb_warga w ON p.niksuami = w.nik 
       WHERE p.nikistri = '$nik' AND p.statusnikah = '$status'
 		");
-  }
+	}
+	
+	function getAll() {		
+    return $query = $this->db->query(
+			"SELECT 
+				*, COUNT(nikcari) AS pencarianterbanyak 
+			FROM tb_pencarian 
+				GROUP BY nikcari 
+					ORDER BY pencarianterbanyak 
+						DESC
+		");
+	}
 }

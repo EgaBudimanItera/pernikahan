@@ -50,5 +50,14 @@ class Pencarian extends CI_Controller {
     
 		$this->load->view('umumtemplate/detailpencarian',$data);
 	}
+
+	public function warga() {
+		$data=array(
+			'page'=>'admin/pencarian/listpencarian',
+			'link'=>'pencarian/warga',
+			'isi'=>$this->PencarianModel->getAll()->result(),
+		);
+		$this->load->view('admintemplate/wrapper',$data);
+	}
   
 }

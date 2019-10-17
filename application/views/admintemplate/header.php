@@ -95,7 +95,7 @@
 
       <!-- Nav Item - Pages Collapse Menu -->
       <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="<?=base_url()?>pencarian/warga">
           <i class="fas fa-fw fa-folder"></i>
           <span>Pencarian</span>
         </a>
@@ -104,7 +104,7 @@
 
       <!-- Nav Item - Charts -->
       <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="<?=base_url()?>tanggapan/warga">
           <i class="fas fa-fw fa-chart-area"></i>
           <span>Tanggapan</span></a>
       </li>
