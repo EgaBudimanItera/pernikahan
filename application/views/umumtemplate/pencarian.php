@@ -29,7 +29,7 @@
         </div>
         <?php foreach ($isi as $key => $data) {;?>
           <div class="span3">
-            <a href="<?=base_url()?>pencarian/detail?nik=<?= $data->nik ?>" style="color: #656565; text-decoration: none;">    
+            <a href="<?=base_url()?>pencarian/detail/<?= $data->nik ?>" style="color: #656565; text-decoration: none;">    
               <img src="<?=base_url()?>assets/<?= $data->foto ?>" alt="" class="img-polaroid" />
               <div class="roles">
                 <p class="lead">

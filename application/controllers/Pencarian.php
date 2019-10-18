@@ -30,8 +30,8 @@ class Pencarian extends CI_Controller {
 		$this->load->view('umumtemplate/hasilpencarian',$data);
 	}
 	
-	public function detail() {
-    $nik = $_GET['nik'];
+	public function detail($nik) {
+    // $nik = $_GET['nik'];
     $isi = $this->PencarianModel->detailpencarian($nik)->result();
     $jk = $isi[0]->jk;
     if($jk == "Laki-Laki"){
