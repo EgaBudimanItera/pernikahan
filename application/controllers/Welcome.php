@@ -22,6 +22,7 @@ class Welcome extends CI_Controller {
 		$data=array(
 			'page'=>'umumtemplate/pencarian',
 			'link'=>'/pencarian',
+			'link2'=>'home'
 			'isi'=>$this->PernikahanModel->getRandomData()->result(),
 		);
 		$this->load->view('umumtemplate/pencarian',$data);

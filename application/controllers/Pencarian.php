@@ -22,9 +22,10 @@ class Pencarian extends CI_Controller {
 		$data=array(
 			'page'=>'umumtemplate/hasilpencarian',
 			'link'=>'/pencarian/search',
-      'isi'=>$this->PencarianModel->pencarian()->result(),
-      'keyword'=>$this->input->post('nik'),
-    );
+			'link2'=>'pencarian',
+      		'isi'=>$this->PencarianModel->pencarian()->result(),
+      		'keyword'=>$this->input->post('nik'),
+    	);
     
 		$this->load->view('umumtemplate/hasilpencarian',$data);
 	}
@@ -44,10 +45,11 @@ class Pencarian extends CI_Controller {
 		$data=array(
 			'page'=>'umumtemplate/detailpencarian',
 			'link'=>'/pencarian/detail',
-      'pasanganNikah'=>$pasanganNikah,
-      'pasanganCerai'=>$pasanganCerai,
-      'isi'=>$isi,
-    );
+			'link2'=>'pencarian',
+      		'pasanganNikah'=>$pasanganNikah,
+      		'pasanganCerai'=>$pasanganCerai,
+      		'isi'=>$isi,
+    	);
     
 		$this->load->view('umumtemplate/detailpencarian',$data);
 	}
@@ -56,6 +58,7 @@ class Pencarian extends CI_Controller {
 		$data=array(
 			'page'=>'admin/pencarian/listpencarian',
 			'link'=>'pencarian/warga',
+			'link2'=>'pencarian',
 			'isi'=>$this->PencarianModel->getAll()->result(),
 		);
 		$this->load->view('admintemplate/wrapper',$data);
