@@ -22,8 +22,7 @@ class Pernikahan extends CI_Controller {
 		$data=array(
 			'page'=>'admin/pernikahan/listpernikahan',
 			'link'=>'pernikahan',
-			'isi'=>$this->PernikahanModel->listall()->result(),
-			
+			'isi'=>$this->PernikahanModel->listall()->result()			
 		);
 		$this->load->view('admintemplate/wrapper',$data);
 	}
