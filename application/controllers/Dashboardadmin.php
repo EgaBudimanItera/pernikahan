@@ -10,7 +10,7 @@ class Dashboardadmin extends CI_Controller {
 		    echo '<script>alert("Maaf, anda harus login terlebih dahulu");window.location = "'.base_url().'login";</script>';
 		}else{
 	       $iduser = $this->session->userdata('iduser');
-	       $where=array('id_user'=>$iduser);
+	       $where=array('iduser'=>$iduser);
 	       $cek=$this->UserModel->cek_login($where)->num_rows(); 
 	       if($cek == 0){
 	           echo '<script>alert("User tidak ditemukan di database");window.location = "'.base_url().'login";</script>';
@@ -26,7 +26,8 @@ class Dashboardadmin extends CI_Controller {
 			'warga'=>$this->WargaModel->getCount()->result(),
 			'pernikahan'=>$this->PernikahanModel->getCount()->result(),
 			'pencarian'=>$this->PencarianModel->getCount()->result(),
-			'tanggapan'=>$this->TanggapanModel->getCount()->result()
+			'tanggapan'=>$this->TanggapanModel->getCount()->result(),
+			'topsearch'=>$this->PencarianModel->topFiveSearch()->result()
 		);
 		$this->load->view('admintemplate/wrapper',$data);
 	}

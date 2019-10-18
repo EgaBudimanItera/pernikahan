@@ -46,9 +46,9 @@ class Pencarian extends CI_Controller {
 			'page'=>'umumtemplate/detailpencarian',
 			'link'=>'/pencarian/detail',
 			'link2'=>'pencarian',
-      		'pasanganNikah'=>$pasanganNikah,
-      		'pasanganCerai'=>$pasanganCerai,
-      		'isi'=>$isi,
+			'pasanganNikah'=>$pasanganNikah,
+			'pasanganCerai'=>$pasanganCerai,
+			'isi'=>$isi,
     	);
     
 		$this->load->view('umumtemplate/detailpencarian',$data);

@@ -57,6 +57,17 @@ class PencarianModel extends CI_Model {
 						DESC
 		");
 	}
+	
+	function topFiveSearch() {		
+    return $query = $this->db->query(
+			"SELECT 
+				*, COUNT(nikcari) AS pencarianterbanyak 
+			FROM tb_pencarian 
+				GROUP BY nikcari 
+					ORDER BY pencarianterbanyak 
+						DESC LIMIT 5
+		");
+	}
 
 	function getCount() {
 		return $query = $this->db->query("SELECT COUNT(*) as jumlah FROM  tb_pencarian");

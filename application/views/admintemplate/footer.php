@@ -56,6 +56,7 @@
 
   <!-- Page level custom scripts -->
   <script src="<?=base_url()?>back/js/demo/chart-area-demo.js"></script>
+  <!-- <script src="<?=base_url()?>back/js/demo/chart-top-search.js"></script> -->
   <script src="<?=base_url()?>back/js/demo/chart-pie-demo.js"></script>
 
   <!-- Page level plugins -->
