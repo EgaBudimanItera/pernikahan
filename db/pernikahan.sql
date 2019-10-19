@@ -22,9 +22,9 @@ CREATE TABLE IF NOT EXISTS `tb_pencarian` (
   `nikcari` varchar(40) DEFAULT NULL,
   `tglcari` datetime DEFAULT NULL,
   PRIMARY KEY (`idpencarian`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
 
--- Dumping data for table db_pernikahan.tb_pencarian: ~2 rows (approximately)
+-- Dumping data for table db_pernikahan.tb_pencarian: ~18 rows (approximately)
 DELETE FROM `tb_pencarian`;
 /*!40000 ALTER TABLE `tb_pencarian` DISABLE KEYS */;
 INSERT INTO `tb_pencarian` (`idpencarian`, `nikcari`, `tglcari`) VALUES
@@ -34,7 +34,18 @@ INSERT INTO `tb_pencarian` (`idpencarian`, `nikcari`, `tglcari`) VALUES
 	(4, '4543', '2019-10-17 15:53:15'),
 	(5, '11', '2019-10-17 15:53:17'),
 	(6, '1', '2019-10-17 15:53:20'),
-	(7, '1', '2019-10-17 15:58:19');
+	(7, '1', '2019-10-17 15:58:19'),
+	(8, '123', '2019-10-18 14:41:52'),
+	(9, NULL, '2019-10-18 14:42:05'),
+	(10, '1234', '2019-10-19 17:10:40'),
+	(11, '1', '2019-10-19 17:10:51'),
+	(12, '1', '2019-10-19 17:10:53'),
+	(13, '00', '2019-10-19 17:16:48'),
+	(14, '343', '2019-10-19 17:16:50'),
+	(15, '566', '2019-10-19 17:16:53'),
+	(16, '2099', '2019-10-19 17:16:56'),
+	(17, '22', '2019-10-19 17:17:07'),
+	(18, '22', '2019-10-19 17:17:11');
 /*!40000 ALTER TABLE `tb_pencarian` ENABLE KEYS */;
 
 -- Dumping structure for table db_pernikahan.tb_pernikahan
@@ -85,7 +96,7 @@ CREATE TABLE IF NOT EXISTS `tb_tanggapan` (
   PRIMARY KEY (`idtanggapan`)
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=latin1;
 
--- Dumping data for table db_pernikahan.tb_tanggapan: ~0 rows (approximately)
+-- Dumping data for table db_pernikahan.tb_tanggapan: ~12 rows (approximately)
 DELETE FROM `tb_tanggapan`;
 /*!40000 ALTER TABLE `tb_tanggapan` DISABLE KEYS */;
 INSERT INTO `tb_tanggapan` (`idtanggapan`, `nik`, `namalengkap`, `isitanggapan`) VALUES
@@ -111,11 +122,13 @@ CREATE TABLE IF NOT EXISTS `tb_user` (
   `namalengkap` varchar(40) DEFAULT NULL,
   `lastlogin` datetime DEFAULT NULL,
   PRIMARY KEY (`iduser`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
--- Dumping data for table db_pernikahan.tb_user: ~0 rows (approximately)
+-- Dumping data for table db_pernikahan.tb_user: ~1 rows (approximately)
 DELETE FROM `tb_user`;
 /*!40000 ALTER TABLE `tb_user` DISABLE KEYS */;
+INSERT INTO `tb_user` (`iduser`, `namauser`, `password`, `namalengkap`, `lastlogin`) VALUES
+	(1, 'admin', 'admin', 'Administrator', '2019-10-17 22:37:51');
 /*!40000 ALTER TABLE `tb_user` ENABLE KEYS */;
 
 -- Dumping structure for table db_pernikahan.tb_warga
@@ -127,22 +140,28 @@ CREATE TABLE IF NOT EXISTS `tb_warga` (
   `statusnikah` varchar(30) DEFAULT NULL,
   `statuslain` varchar(40) DEFAULT NULL,
   `foto` text,
+  `umur` int(11) DEFAULT NULL,
+  `tanggallahir` date DEFAULT NULL,
+  `no_ktp` int(11) DEFAULT NULL,
+  `pekerjaan` varchar(50) DEFAULT NULL,
+  `pendidikan` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`nik`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
--- Dumping data for table db_pernikahan.tb_warga: ~9 rows (approximately)
+-- Dumping data for table db_pernikahan.tb_warga: ~5 rows (approximately)
 DELETE FROM `tb_warga`;
 /*!40000 ALTER TABLE `tb_warga` DISABLE KEYS */;
-INSERT INTO `tb_warga` (`nik`, `namalengkap`, `alamat`, `jk`, `statusnikah`, `statuslain`, `foto`) VALUES
-	('0987654321', 'Perempuan 1', 'Bandar Lampung', 'Perempuan', '2', NULL, '2.png'),
-	('1234567890', 'Laki Laki 1', 'Bandar Lampung', 'Laki-Laki', '2', NULL, '1.png'),
-	('2232323243', 'Perempuan 4', 'Bandar Lampung', 'Perempuan', '2', NULL, '2.png'),
-	('22323232455', 'Laki Laki 4', 'Bandar Lampung', 'Laki-Laki', '2', NULL, '1.png'),
-	('2322424244', 'Perempuan 3', 'Bandar Lampung', 'Perempuan', '2', NULL, '2.png'),
-	('23333', 'Perempuan 5', 'Bandar Lampung', 'Perempuan', '2', NULL, '2.png'),
-	('23923892881', 'Laki Laki 2', 'Bandar Lampung', 'Laki-Laki', '2', NULL, '1.png'),
-	('3232323232', 'Laki Laki 3', 'Bandar Lampung', 'Laki-Laki', '2', NULL, '1.png'),
-	('3434343434', 'Perempuan 2', 'Bandar Lampung', 'Perempuan', '2', NULL, '2.png');
+INSERT INTO `tb_warga` (`nik`, `namalengkap`, `alamat`, `jk`, `statusnikah`, `statuslain`, `foto`, `umur`, `tanggallahir`, `no_ktp`, `pekerjaan`, `pendidikan`) VALUES
+	('0987654321', 'Perempuan 1', 'Bandar Lampung', 'Perempuan', '2', NULL, 'decode1.jpg', 24, '1995-10-01', 898989898, 'Swasta', 'SMA Sederajat'),
+	('1234567890', 'Laki Laki 1', 'Bandar Lampung', 'Laki-Laki', '2', NULL, '1.png', NULL, NULL, NULL, NULL, NULL),
+	('2232323243', 'Perempuan 4', 'Bandar Lampung', 'Perempuan', '2', NULL, 'decode3.jpg', 22, '1997-10-01', 9989898, '-', '-'),
+	('22323232455', 'Laki Laki 4', 'Bandar Lampung', 'Laki-Laki', '2', NULL, '1.png', NULL, NULL, NULL, NULL, NULL),
+	('2322424244', 'Perempuan 3', 'Bandar Lampung', 'Perempuan', '2', NULL, '2.png', NULL, NULL, NULL, NULL, NULL),
+	('23333', 'Perempuan 5', 'Bandar Lampung', 'Perempuan', '2', NULL, '2.png', NULL, NULL, NULL, NULL, NULL),
+	('23923892881', 'Laki Laki 2', 'Bandar Lampung', 'Laki-Laki', '2', NULL, '1.png', NULL, NULL, NULL, NULL, NULL),
+	('3232323232', 'Laki Laki 3', 'Bandar Lampung', 'Laki-Laki', '2', NULL, '1.png', NULL, NULL, NULL, NULL, NULL),
+	('3434343434', 'Perempuan 2', 'Bandar Lampung', 'Perempuan', '2', NULL, '2.png', NULL, NULL, NULL, NULL, NULL),
+	('878787890', 'Saitama Botak', '-', 'Laki-Laki', '1', NULL, 'saitama.jpg', 70, '1945-08-17', 2147483647, 'Pahlawan', 'SD');
 /*!40000 ALTER TABLE `tb_warga` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
