@@ -72,7 +72,7 @@ var myBarChart = new Chart(ctx, {
           drawBorder: false
         },
         ticks: {
-          maxTicksLimit: 6
+          maxTicksLimit: 10
         },
         maxBarThickness: 25,
       }],
@@ -83,7 +83,7 @@ var myBarChart = new Chart(ctx, {
         gridLines: {
           color: "rgb(234, 236, 244)",
           zeroLineColor: "rgb(234, 236, 244)",
-          drawBorder: false,
+          drawBorder: true,
           borderDash: [2],
           zeroLineBorderDash: [2]
         }

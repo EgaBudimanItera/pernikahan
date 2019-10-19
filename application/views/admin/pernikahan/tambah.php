@@ -41,6 +41,10 @@
                     </select>
                     
                   </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">No. KTP</label>
+                      <input type="number" class="form-control no-spinner" name="no_ktp" id="no_ktp" required="" aria-describedby="emailHelp" placeholder="Masukkan No KTP" autocomplete="off">    
+                    </div>
 
 
                   <div class="form-group">
@@ -57,6 +61,22 @@
                     <label for="exampleInputPassword1">Jenis Kelamin</label>
                     <input type="text" class="form-control" name="jksuami" id="jksuami" required="" >
                   </div>  
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Umur</label>
+                    <input type="number" class="form-control no-spinner" name="umur" id="umur" required="" aria-describedby="emailHelp" placeholder="Umur" autocomplete="off">    
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Tanggal Lahir</label>
+                    <input type="text" class="form-control" name="tanggallahir" id="tglnikah" required="" placeholder="">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Pekerjaan</label>
+                    <input type="text" class="form-control" name="pekerjaan" id="pekerjaan" required="" placeholder="Masukkan Pekerjaan" autocomplete="off">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Pendidikan</label>
+                    <input type="text" class="form-control" name="pendidikan" id="pendidikan" required="" placeholder="Masukkan Pendidikan Terakhir" autocomplete="off">
+                  </div>
 
                   
                   <div class="form-group"><center>
@@ -94,6 +114,10 @@
                     </select>
                     
                   </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">No. KTP</label>
+                      <input type="number" class="form-control no-spinner" name="no_ktp" id="no_ktpistri" required="" aria-describedby="emailHelp" placeholder="Masukkan No KTP" autocomplete="off">    
+                    </div>
                   
                   <div class="form-group">
                     <label for="exampleInputPassword1">Nama Lengkap</label>
@@ -109,6 +133,22 @@
                     <label for="exampleInputPassword1">Jenis Kelamin</label>
                     <input type="text" class="form-control" name="jkistri" id="jkistri" required="" >
                   </div>  
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Umur</label>
+                    <input type="number" class="form-control no-spinner" name="umur" id="umuristri" required="" aria-describedby="emailHelp" placeholder="Umur" autocomplete="off">    
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Tanggal Lahir</label>
+                    <input type="text" class="form-control" name="tanggallahir" id="tglnikahistri" required="" placeholder="">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Pekerjaan</label>
+                    <input type="text" class="form-control" name="pekerjaan" id="pekerjaanistri" required="" placeholder="Masukkan Pekerjaan" autocomplete="off">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Pendidikan</label>
+                    <input type="text" class="form-control" name="pendidikan" id="pendidikanistri" required="" placeholder="Masukkan Pendidikan Terakhir" autocomplete="off">
+                  </div>
 
                   
                   <div class="form-group"><center>

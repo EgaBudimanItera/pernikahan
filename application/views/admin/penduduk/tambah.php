@@ -33,15 +33,33 @@
                       <input type="number" class="form-control no-spinner" name="nik" id="exampleInputEmail1" required="" aria-describedby="emailHelp" placeholder="Masukkan NIK sesuai KTP" autocomplete="off">    
                     </div>
                     <div class="form-group">
+                      <label for="exampleInputEmail1">No. KTP</label>
+                      <input type="number" class="form-control no-spinner" name="no_ktp" id="exampleInputEmail1" required="" aria-describedby="emailHelp" placeholder="Masukkan No KTP" autocomplete="off">    
+                    </div>
+                    <div class="form-group">
                       <label for="exampleInputPassword1">Nama Lengkap</label>
                       <input type="text" class="form-control" name="namalengkap" id="exampleInputPassword1" required="" placeholder="Masukkan Nama sesuai KTP" autocomplete="off">
                     </div>
-
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Umur</label>
+                      <input type="number" class="form-control no-spinner" name="umur" id="exampleInputEmail1" required="" aria-describedby="emailHelp" placeholder="Umur" autocomplete="off">    
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Tanggal Lahir</label>
+                      <input type="text" class="form-control" name="tanggallahir" id="tglnikah" required="" placeholder="">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Pekerjaan</label>
+                      <input type="text" class="form-control" name="pekerjaan" id="exampleInputPassword1" required="" placeholder="Masukkan Pekerjaan" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Pendidikan</label>
+                      <input type="text" class="form-control" name="pendidikan" id="exampleInputPassword1" required="" placeholder="Masukkan Pendidikan Terakhir" autocomplete="off">
+                    </div>
                     <div class="form-group">
                       <label for="exampleInputPassword1">Alamat</label>
                       <textarea name="alamat" rows="5" class="form-control" required=""></textarea>
                     </div>
-
                     <div class="form-group">
                       <label for="exampleInputPassword1">Jenis Kelamin</label>
                       <select name="jk" class="form-control select2" required="">

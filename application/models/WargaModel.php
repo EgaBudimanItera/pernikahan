@@ -18,6 +18,11 @@ class WargaModel extends CI_Model
             $data=array(
                 'nik'=>$this->input->post('nik',true),
                 'namalengkap'=>$this->input->post('namalengkap',true),
+                'no_ktp'=>$this->input->post('no_ktp',true),
+                'umur'=>$this->input->post('umur',true),
+                'tanggallahir'=>$this->input->post('tanggallahir',true),
+                'pekerjaan'=>$this->input->post('pekerjaan',true),
+                'pendidikan'=>$this->input->post('pendidikan',true),
                 'alamat'=>$this->input->post('alamat',true),
                 'jk'=>$this->input->post('jk',true),
                 'statusnikah'=>$this->input->post('statusnikah',true),
@@ -52,6 +57,11 @@ class WargaModel extends CI_Model
         $data=array(
             
             'namalengkap'=>$this->input->post('namalengkap',true),
+            'no_ktp'=>$this->input->post('no_ktp',true),
+            'umur'=>$this->input->post('umur',true),
+            'tanggallahir'=>$this->input->post('tanggallahir',true),
+            'pekerjaan'=>$this->input->post('pekerjaan',true),
+            'pendidikan'=>$this->input->post('pendidikan',true),
             'alamat'=>$this->input->post('alamat',true),
             'jk'=>$this->input->post('jk',true),
             'statusnikah'=>$this->input->post('statusnikah',true),

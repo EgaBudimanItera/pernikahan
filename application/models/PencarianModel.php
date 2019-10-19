@@ -65,7 +65,7 @@ class PencarianModel extends CI_Model {
 			FROM tb_pencarian 
 				GROUP BY nikcari 
 					ORDER BY pencarianterbanyak 
-						DESC LIMIT 5
+						DESC LIMIT 10
 		");
 	}
 

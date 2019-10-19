@@ -34,8 +34,28 @@
                       
                     </div>
                     <div class="form-group">
+                      <label for="exampleInputEmail1">No. KTP</label>
+                      <input type="number" class="form-control no-spinner" name="no_ktp" id="exampleInputEmail1" value="<?=$isi->no_ktp?>" required="" aria-describedby="emailHelp" placeholder="Masukkan No KTP" autocomplete="off">    
+                    </div>
+                    <div class="form-group">
                       <label for="exampleInputPassword1">Nama Lengkap</label>
                       <input type="text" class="form-control" name="namalengkap" id="exampleInputPassword1" value="<?=$isi->namalengkap?>" required="" placeholder="Masukkan Nama sesuai KTP">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Umur</label>
+                      <input type="number" class="form-control no-spinner" name="umur" value="<?=$isi->umur?>" id="exampleInputEmail1" required="" aria-describedby="emailHelp" placeholder="Umur" autocomplete="off">    
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Tanggal Lahir</label>
+                      <input type="text" class="form-control" name="tanggallahir" value="<?=$isi->tanggallahir?>" id="tglnikah" required="" placeholder="">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Pekerjaan</label>
+                      <input type="text" class="form-control" name="pekerjaan" value="<?=$isi->pekerjaan?>" id="exampleInputPassword1" required="" placeholder="Masukkan Pekerjaan" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Pendidikan</label>
+                      <input type="text" class="form-control" name="pendidikan" value="<?=$isi->pendidikan?>" id="exampleInputPassword1" required="" placeholder="Masukkan Pendidikan Terakhir" autocomplete="off">
                     </div>
 
                     <div class="form-group">
