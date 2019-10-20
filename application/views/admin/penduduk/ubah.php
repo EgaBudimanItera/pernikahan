@@ -33,18 +33,18 @@
                       <input type="text" class="form-control" name="nik" id="exampleInputEmail1" value="<?=$isi->nik?>" readonly="" aria-describedby="emailHelp" placeholder="Masukkan NIK sesuai KTP">
                       
                     </div>
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                       <label for="exampleInputEmail1">No. KTP</label>
                       <input type="number" class="form-control no-spinner" name="no_ktp" id="exampleInputEmail1" value="<?=$isi->no_ktp?>" required="" aria-describedby="emailHelp" placeholder="Masukkan No KTP" autocomplete="off">    
-                    </div>
+                    </div> -->
                     <div class="form-group">
                       <label for="exampleInputPassword1">Nama Lengkap</label>
                       <input type="text" class="form-control" name="namalengkap" id="exampleInputPassword1" value="<?=$isi->namalengkap?>" required="" placeholder="Masukkan Nama sesuai KTP">
                     </div>
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                       <label for="exampleInputEmail1">Umur</label>
                       <input type="number" class="form-control no-spinner" name="umur" value="<?=$isi->umur?>" id="exampleInputEmail1" required="" aria-describedby="emailHelp" placeholder="Umur" autocomplete="off">    
-                    </div>
+                    </div> -->
                     <div class="form-group">
                       <label for="exampleInputPassword1">Tanggal Lahir</label>
                       <input type="text" class="form-control" name="tanggallahir" value="<?=$isi->tanggallahir?>" id="tglnikah" required="" placeholder="">

@@ -41,9 +41,9 @@
                     <tr>
                       <th>No</th>
                       <th>NIK</th>
-                      <th>No. KTP</th>
+                      
                       <th>Nama Lengkap</th>
-                      <th>Umur / Tgl. Lahir</th>
+                      <th>Tgl. Lahir</th>
                       <th>Pekerjaan</th>
                       <th>Pendidikan</th>
                       <th>Alamat</th>
@@ -61,10 +61,10 @@
                     ?>
                     <tr>
                       <td><?=$no?></td>
-                      <td><?=$i->no_ktp?></td>
+                      
                       <td><?=$i->nik?></td>
                       <td><?=$i->namalengkap?></td>
-                      <td><?=$i->umur?> / <?= $i->tanggallahir ?></td>
+                      <td><?= $i->tanggallahir ?></td>
                       <td><?=$i->pekerjaan?></td>
                       <td><?=$i->pendidikan?></td>
                       <td><?=$i->alamat?></td>

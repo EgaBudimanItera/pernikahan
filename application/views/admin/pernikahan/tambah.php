@@ -41,10 +41,10 @@
                     </select>
                     
                   </div>
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                       <label for="exampleInputEmail1">No. KTP</label>
                       <input type="number" class="form-control no-spinner" name="no_ktp" id="no_ktp" required="" aria-describedby="emailHelp" placeholder="Masukkan No KTP" autocomplete="off">    
-                    </div>
+                    </div> -->
 
 
                   <div class="form-group">
@@ -114,10 +114,10 @@
                     </select>
                     
                   </div>
-                    <div class="form-group">
+                   <!--  <div class="form-group">
                       <label for="exampleInputEmail1">No. KTP</label>
                       <input type="number" class="form-control no-spinner" name="no_ktp" id="no_ktpistri" required="" aria-describedby="emailHelp" placeholder="Masukkan No KTP" autocomplete="off">    
-                    </div>
+                    </div> -->
                   
                   <div class="form-group">
                     <label for="exampleInputPassword1">Nama Lengkap</label>
