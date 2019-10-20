@@ -68,6 +68,15 @@ class PencarianModel extends CI_Model {
 						DESC LIMIT 10
 		");
 	}
+	
+	function jumlahPernikahan() {		
+    return $query = $this->db->query(
+			"SELECT Month(tglnikah) as bulan, Count(*) as jumlah
+				FROM tb_pernikahan
+				WHERE tglnikah >= CURDATE() - INTERVAL 1 YEAR
+				GROUP BY MONTH(tglnikah)
+		");
+	}
 
 	function getCount() {
 		return $query = $this->db->query("SELECT COUNT(*) as jumlah FROM  tb_pencarian");

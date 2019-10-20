@@ -20,6 +20,25 @@ class Dashboardadmin extends CI_Controller {
 	}
 	public function index()
 	{
+		$jumlah_pernikahan_per_bulan = $this->PencarianModel->jumlahPernikahan()->result();
+		$arrData = [];
+		for ($i=1; $i < 13; $i++) {
+			$obj = [
+				"bulan" => $i,
+				"jumlah" => 0
+			];
+
+			foreach ($jumlah_pernikahan_per_bulan as $data) {
+				if($i == $data->bulan) {
+					$obj = [
+						"bulan" => $data->bulan,
+						"jumlah" => $data->jumlah
+					];
+				}
+			}
+			array_push($arrData, $obj);
+		}
+
 		$data=array(
 			'page'=>'admin/beranda',
 			'link'=>'dashboard',
@@ -27,7 +46,8 @@ class Dashboardadmin extends CI_Controller {
 			'pernikahan'=>$this->PernikahanModel->getCount()->result(),
 			'pencarian'=>$this->PencarianModel->getCount()->result(),
 			'tanggapan'=>$this->TanggapanModel->getCount()->result(),
-			'topsearch'=>$this->PencarianModel->topFiveSearch()->result()
+			'topsearch'=>$this->PencarianModel->topFiveSearch()->result(),
+			'arrData' => $arrData
 		);
 		$this->load->view('admintemplate/wrapper',$data);
 	}
