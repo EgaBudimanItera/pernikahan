@@ -67,7 +67,7 @@
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Tanggal Lahir</label>
-                    <input type="text" class="form-control" name="tanggallahir" id="tglnikah" required="" placeholder="">
+                    <input type="text" class="form-control" name="tanggallahir" id="tglnikahsuami" required="" placeholder="">
                   </div>
                   <div class="form-group">
                     <label for="exampleInputPassword1">Pekerjaan</label>

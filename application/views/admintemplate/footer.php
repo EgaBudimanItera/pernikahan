@@ -134,8 +134,8 @@
               $('#alamatsuami').val(res_.alamat);
               $('#jksuami').val(res_.jk);
               $('#no_ktp').val(res_.no_ktp);
-              $('#umur').val(res_.umur);
-              $('#tglnikah').val(res_.tanggallahir);
+              // $('#umur').val(res_.umur);
+              $('#tglnikahsuami').val(res_.tanggallahir);
               $('#pekerjaan').val(res_.pekerjaan);
               $('#pendidikan').val(res_.pendidikan);
               $("#gambarsuami").attr('src','<?=base_url()?>assets/'+res_.foto);
@@ -158,7 +158,7 @@
               $('#alamatistri').val(res_.alamat);
               $('#jkistri').val(res_.jk);
               $('#no_ktpistri').val(res_.no_ktp);
-              $('#umuristri').val(res_.umur);
+              // $('#umuristri').val(res_.umur);
               $('#tglnikahistri').val(res_.tanggallahir);
               $('#pekerjaanistri').val(res_.pekerjaan);
               $('#pendidikanistri').val(res_.pendidikan);
