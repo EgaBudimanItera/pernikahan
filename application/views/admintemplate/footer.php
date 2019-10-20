@@ -115,7 +115,7 @@
      
       format: 'yyyy-mm-dd'
     });
-    $('#tglnikahistri').datepicker({
+    $('.datepicker').datepicker({
      
       format: 'yyyy-mm-dd'
     });
