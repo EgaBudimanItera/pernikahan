@@ -61,10 +61,10 @@
                     <label for="exampleInputPassword1">Jenis Kelamin</label>
                     <input type="text" class="form-control" name="jksuami" id="jksuami" required="" >
                   </div>  
-                  <div class="form-group">
+                  <!-- <div class="form-group">
                     <label for="exampleInputEmail1">Umur</label>
                     <input type="number" class="form-control no-spinner" name="umur" id="umur" required="" aria-describedby="emailHelp" placeholder="Umur" autocomplete="off">    
-                  </div>
+                  </div> -->
                   <div class="form-group">
                     <label for="exampleInputPassword1">Tanggal Lahir</label>
                     <input type="text" class="form-control" name="tanggallahir" id="tglnikahsuami" required="" placeholder="">
@@ -133,10 +133,10 @@
                     <label for="exampleInputPassword1">Jenis Kelamin</label>
                     <input type="text" class="form-control" name="jkistri" id="jkistri" required="" >
                   </div>  
-                  <div class="form-group">
-                    <label for="exampleInputEmail1">Umur</label>
-                    <input type="number" class="form-control no-spinner" name="umur" id="umuristri" required="" aria-describedby="emailHelp" placeholder="Umur" autocomplete="off">    
-                  </div>
+                    <!-- <div class="form-group">
+                      <label for="exampleInputEmail1">Umur</label>
+                      <input type="number" class="form-control no-spinner" name="umur" id="umuristri" required="" aria-describedby="emailHelp" placeholder="Umur" autocomplete="off">    
+                    </div> -->
                   <div class="form-group">
                     <label for="exampleInputPassword1">Tanggal Lahir</label>
                     <input type="text" class="form-control" name="tanggallahir" id="tglnikahistri" required="" placeholder="">
