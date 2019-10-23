@@ -13,7 +13,8 @@ class Welcome extends CI_Controller {
 			'page'=>'umumtemplate/contohisi',
 			'link'=>'/',
 			'link2'=>'home',
-			'isi'=>$this->PernikahanModel->getRandomData()->result()
+			'isi'=>$this->PernikahanModel->getRandomData()->result(),
+			'jumlah'=>$this->PernikahanModel->listall()->num_rows()
 		);
 		$this->load->view('umumtemplate/wrapper',$data);
 	}

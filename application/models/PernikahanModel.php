@@ -48,7 +48,7 @@ class PernikahanModel extends CI_Model
 			'SELECT 
 					p.*, 
 					wl.nik AS niksuami, wl.namalengkap AS namasuami, wl.foto AS fotosuami, wl.alamat AS alamatsuami, 
-					wp.nik AS nikistri, wp.namalengkap AS namaistri, wp.foto AS fotoistri, wp.alamat AS alamatsuami
+					wp.nik AS nikistri, wp.namalengkap AS namaistri, wp.foto AS fotoistri, wp.alamat AS alamatistri
 				FROM 
 					tb_pernikahan p 
 					INNER JOIN 
@@ -65,7 +65,7 @@ class PernikahanModel extends CI_Model
 			"SELECT 
 				p.*, 
 				wl.nik AS niksuami, wl.namalengkap AS namasuami, wl.foto AS fotosuami, wl.alamat AS alamatsuami,
-				wp.nik AS nikistri, wp.namalengkap AS namaistri, wp.foto AS fotoistri, wp.alamat AS alamatsuami
+				wp.nik AS nikistri, wp.namalengkap AS namaistri, wp.foto AS fotoistri, wp.alamat AS alamatistri
 			FROM 
 				tb_pernikahan p 
 				INNER JOIN 

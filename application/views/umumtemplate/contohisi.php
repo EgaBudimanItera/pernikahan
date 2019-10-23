@@ -55,8 +55,8 @@
         <div class="row">
           <div class="span12">
             <div class="big-cta">
-              <div class="cta-text">
-                <h3>Kami Telah Melayani Pernikahan Sebanyak  <span class="highlight"><strong>5000 Pernikahan</strong></span> Tahun Ini!</h3>
+              <div class="cta-text" style="float: none">
+                <h3 style="text-align: center">Kami Telah Melayani Pernikahan Sebanyak  <span class="highlight"><strong><?= $jumlah ?> Pernikahan</strong></span></h3>
               </div>
               
             </div>

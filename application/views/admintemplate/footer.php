@@ -111,12 +111,13 @@
     $("#nikistri").select2({
       theme: 'bootstrap4',
     });
-    $('#tglnikah').datepicker({
-     
+    $('#tglnikah').datepicker({     
       format: 'yyyy-mm-dd'
     });
     $('#tglnikahistri').datepicker({
-     
+      format: 'yyyy-mm-dd'
+    });
+    $('#tglnikahsuami').datepicker({
       format: 'yyyy-mm-dd'
     });
 // ================================================
