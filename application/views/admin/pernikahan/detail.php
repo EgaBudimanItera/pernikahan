@@ -70,6 +70,18 @@
             <label for="exampleInputPassword1">Jenis Kelamin</label>
             <input type="text" class="form-control" name="jeniskelamin" readonly value="Laki-Laki">
           </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Tanggal Lahir</label>
+            <input type="text" class="form-control datepicker" name="tanggallahir" id="tglnikahsuami" readonly value="<?=$isi->tanggallahirsuami?>" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Pekerjaan</label>
+            <input type="text" class="form-control" name="pekerjaan" id="pekerjaan" readonly value="<?=$isi->pekerjaansuami?>" placeholder="Masukkan Pekerjaan" autocomplete="off">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Pendidikan</label>
+            <input type="text" class="form-control" name="pendidikan" id="pendidikan" readonly value="<?=$isi->pendidikansuami?>" placeholder="Masukkan Pendidikan Terakhir" autocomplete="off">
+          </div>
           <div class="form-group">              
             <div class="card shadow mb-4">
               <div class="card-body">
@@ -111,6 +123,18 @@
           <div class="form-group">
             <label for="exampleInputPassword1">Jenis Kelamin</label>
             <input type="text" class="form-control" name="jeniskelamin" readonly value="Perempuan">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Tanggal Lahir</label>
+            <input type="text" class="form-control datepicker" name="tanggallahir" id="tglnikahsuami" readonly value="<?=$isi->tanggallahiristri?>" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Pekerjaan</label>
+            <input type="text" class="form-control" name="pekerjaan" id="pekerjaan" readonly value="<?=$isi->pekerjaanistri?>" placeholder="Masukkan Pekerjaan" autocomplete="off">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Pendidikan</label>
+            <input type="text" class="form-control" name="pendidikan" id="pendidikan" readonly value="<?=$isi->pendidikanistri?>" placeholder="Masukkan Pendidikan Terakhir" autocomplete="off">
           </div>
           <div class="form-group">              
             <div class="card shadow mb-4">

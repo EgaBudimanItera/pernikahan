@@ -47,8 +47,8 @@ class PernikahanModel extends CI_Model
 		return $this->db->query(
 			'SELECT 
 					p.*, 
-					wl.nik AS niksuami, wl.namalengkap AS namasuami, wl.foto AS fotosuami, wl.alamat AS alamatsuami, 
-					wp.nik AS nikistri, wp.namalengkap AS namaistri, wp.foto AS fotoistri, wp.alamat AS alamatistri
+					wl.nik AS niksuami, wl.namalengkap AS namasuami, wl.foto AS fotosuami, wl.alamat AS alamatsuami, wl.pekerjaan AS pekerjaansuami, wl.pendidikan AS pendidikansuami, wl.tanggallahir AS tanggallahirsuami, 
+					wp.nik AS nikistri, wp.namalengkap AS namaistri, wp.foto AS fotoistri, wp.alamat AS alamatistri, wp.pekerjaan AS pekerjaanistri, wp.pendidikan AS pendidikanistri, wp.tanggallahir AS tanggallahiristri
 				FROM 
 					tb_pernikahan p 
 					INNER JOIN 
