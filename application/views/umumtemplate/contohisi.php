@@ -33,7 +33,7 @@
         <div class="row">
           <div class="span12">
             <div class="row">
-              <div class="span3">
+              <div class="span3" data-target="#administrasi" data-toggle="modal">
                 <div class="box aligncenter">
                   <div class="aligncenter icon">
                     <i class="icon-briefcase icon-circled icon-64 active"></i>
@@ -47,7 +47,7 @@
                   </div>
                 </div>
               </div>
-              <div class="span3">
+              <div class="span3" data-target="#pelayanan" data-toggle="modal">
                 <div class="box aligncenter">
                   <div class="aligncenter icon">
                     <i class="icon-desktop icon-circled icon-64 active"></i>
@@ -61,7 +61,7 @@
                   </div>
                 </div>
               </div>
-              <div class="span3">
+              <div class="span3" data-target="#pungli" data-toggle="modal">
                 <div class="box aligncenter">
                   <div class="aligncenter icon">
                     <i class="icon-beaker icon-circled icon-64 active"></i>
@@ -75,7 +75,7 @@
                   </div>
                 </div>
               </div>
-              <div class="span3">
+              <div class="span3" data-target="#ibadah" data-toggle="modal">
                 <div class="box aligncenter">
                   <div class="aligncenter icon">
                     <i class="icon-coffee icon-circled icon-64 active"></i>
@@ -92,6 +92,45 @@
             </div>
           </div>
         </div>
+
+        <!-- Modal -->
+        <div id="administrasi" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="administrasiModalLabel" aria-hidden="true">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 id="administrasiModalLabel">Title</h4>
+          </div>
+          <div class="modal-body">
+            <p>Body</p>
+          </div>
+        </div>
+        <div id="pelayanan" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="pelayananModalLabel" aria-hidden="true">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 id="pelayananModalLabel">Title</h4>
+          </div>
+          <div class="modal-body">
+            <p>Body</p>
+          </div>
+        </div>
+        <div id="pungli" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="pungliModalLabel" aria-hidden="true">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 id="pungliModalLabel">Title</h4>
+          </div>
+          <div class="modal-body">
+            <p>Body</p>
+          </div>
+        </div>
+        <div id="ibadah" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="ibadahModalLabel" aria-hidden="true">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 id="ibadahModalLabel">Title</h4>
+          </div>
+          <div class="modal-body">
+            <p>Body</p>
+          </div>
+        </div>
+
         <!-- divider -->
         <div class="row">
           <div class="span12">
