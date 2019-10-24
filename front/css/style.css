@@ -238,7 +238,7 @@ img.img-polaroid {
 /* --- header -- */
 
 header {
-  background: #fff;
+  background: #23af4c;
   margin: 0;
   padding: 0;
   position: relative;
@@ -307,7 +307,7 @@ header ul.nav li a {
 }
 
 .navbar .nav>li>a {
-  color: #111;
+  color: #fff;
   text-shadow: none;
 }
 
@@ -759,7 +759,7 @@ section.callaction {
 ==================================== */
 
 #inner-headline {
-  background: #252525;
+  background: #37b65c;
   position: relative;
   margin: 0;
   padding: 0;
@@ -1922,9 +1922,9 @@ ul.time-post li.time {
 ================================ */
 
 footer {
-  background: #111;
+  background: #23af4ce8;
   padding: 50px 0 0 0;
-  color: #bbb;
+  color: #fff;
 }
 
 footer a {
@@ -1953,9 +1953,9 @@ ul.social-network li {
 }
 
 #sub-footer {
-  background: #0a0a0a;
+  background: #23af4c;
   text-shadow: none;
-  color: #5d5d5d;
+  color: #d9cf22;
   padding: 0;
   padding-top: 30px;
   margin: 20px 0 0 0;

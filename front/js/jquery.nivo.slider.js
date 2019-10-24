@@ -97,14 +97,14 @@
                 var title = vars.currentImage.attr('title');
                 if(title.substr(0,1) == '#') title = $(title).html();   
 
-                if(nivoCaption.css('display') == 'block'){
-                    setTimeout(function(){
-                        nivoCaption.html(title);
-                    }, settings.animSpeed);
-                } else {
-                    nivoCaption.html(title);
-                    nivoCaption.stop().fadeIn(settings.animSpeed);
-                }
+                // if(nivoCaption.css('display') == 'block'){
+                //     setTimeout(function(){
+                //         nivoCaption.html(title);
+                //     }, settings.animSpeed);
+                // } else {
+                //     nivoCaption.html(title);
+                //     nivoCaption.stop().fadeIn(settings.animSpeed);
+                // }
             } else {
                 nivoCaption.stop().fadeOut(settings.animSpeed);
             }
