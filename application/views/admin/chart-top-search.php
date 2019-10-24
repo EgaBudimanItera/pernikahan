@@ -42,9 +42,9 @@ var myBarChart = new Chart(ctx, {
     ],
     datasets: [{
       label: "Pencarian Teratas",
-      backgroundColor: "#4e73df",
-      hoverBackgroundColor: "#2e59d9",
-      borderColor: "#4e73df",
+      backgroundColor: "#1cc88a",
+      hoverBackgroundColor: "#1cc88c",
+      borderColor: "#1cc88a",
       data: [
       <?php foreach($topsearch as $data){?>
         <?=$data->pencarianterbanyak?>,
@@ -81,8 +81,8 @@ var myBarChart = new Chart(ctx, {
           min: 0,
         },
         gridLines: {
-          color: "rgb(234, 236, 244)",
-          zeroLineColor: "rgb(234, 236, 244)",
+          color: "#13855c5c",
+          zeroLineColor: "#13855c5c",
           drawBorder: true,
           borderDash: [2],
           zeroLineBorderDash: [2]
@@ -123,14 +123,14 @@ var myBarChartPernikahan = new Chart(ctx, {
     datasets: [{
       label: "Jumlah",
       lineTension: 0.3,
-      backgroundColor: "rgba(78, 115, 223, 0.05)",
-      borderColor: "rgba(78, 115, 223, 1)",
+      backgroundColor: "#1cc88a",
+      borderColor: "#13855c",
       pointRadius: 3,
-      pointBackgroundColor: "rgba(78, 115, 223, 1)",
-      pointBorderColor: "rgba(78, 115, 223, 1)",
+      pointBackgroundColor: "#13855c",
+      pointBorderColor: "#13855c",
       pointHoverRadius: 3,
-      pointHoverBackgroundColor: "rgba(78, 115, 223, 1)",
-      pointHoverBorderColor: "rgba(78, 115, 223, 1)",
+      pointHoverBackgroundColor: "#13855c",
+      pointHoverBorderColor: "#13855c",
       pointHitRadius: 10,
       pointBorderWidth: 2,
       data: [        
@@ -168,8 +168,8 @@ var myBarChartPernikahan = new Chart(ctx, {
           padding: 10,  
         },
         gridLines: {
-          color: "rgb(234, 236, 244)",
-          zeroLineColor: "rgb(234, 236, 244)",
+          color: "#13855c5c",
+          zeroLineColor: "#13855c5c",
           drawBorder: false,
           borderDash: [2],
           zeroLineBorderDash: [2]
