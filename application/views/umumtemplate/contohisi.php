@@ -39,7 +39,7 @@
                     <i class="icon-briefcase icon-circled icon-64 active"></i>
                   </div>
                   <div class="text">
-                    <h6><font color="white">Administrasi Pernikahan</font></h6>
+                    <h6><font color="white">Prosedur Pernikahan</font></h6>
                     <p>
                       
                     </p>
@@ -97,10 +97,10 @@
         <div id="administrasi" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="administrasiModalLabel" aria-hidden="true">
           <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-            <h4 id="administrasiModalLabel">Title</h4>
+            <h4 id="administrasiModalLabel">Tata Cara Melakukan Pernikahan di KUA</h4>
           </div>
           <div class="modal-body">
-            <p>Body</p>
+            <img src="<?=base_url()?>front/img/alur.jpg">
           </div>
         </div>
         <div id="pelayanan" class="modal styled hide fade" tabindex="-1" role="dialog" aria-labelledby="pelayananModalLabel" aria-hidden="true">

@@ -71,6 +71,7 @@ a:active {
 .container {
   padding: 0 20px 0 20px;
   position: relative;
+
 }
 
 #wrapper {
@@ -701,7 +702,7 @@ section.callaction {
 .ijoin{
   /*background: green;*/
  background: #23af4c;
- 
+
 }
 
 #content img {
@@ -2324,7 +2325,7 @@ article img.pull-right, article .align-right {
   }
   .box {
     border-bottom: 1px solid #e9e9e9;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
   }
   #featured .flexslider .slide-caption {
     width: 90%;
