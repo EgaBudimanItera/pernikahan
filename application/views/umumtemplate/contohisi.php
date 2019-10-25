@@ -5,7 +5,7 @@
       <div id="nivo-slider">
         <div class="nivo-slider" style="max-height: 450px">
           <!-- Slide #1 image -->
-          <img src="<?=base_url()?>front/img/slides/banner/slide1.jpg" class"img-responsive" alt="" title="#caption-1" />
+          <img src="<?=base_url()?>front/img/slides/banner/slide1.jpg" class="img-responsive" alt="" title="#caption-1" />
           <!-- Slide #2 image -->
           <img src="<?=base_url()?>front/img/slides/banner/slide2.jpg" alt=" " title="#caption-2" />
           <!-- Slide #3 image -->
@@ -30,7 +30,7 @@
     </section>
     <section id="content">
       <div class="container">
-        <div class="row">
+        <div class="row ijoin">
           <div class="span12">
             <div class="row">
               <div class="span3" data-target="#administrasi" data-toggle="modal">
@@ -39,7 +39,7 @@
                     <i class="icon-briefcase icon-circled icon-64 active"></i>
                   </div>
                   <div class="text">
-                    <h6>Administrasi Pernikahan</h6>
+                    <h6><font color="white">Administrasi Pernikahan</font></h6>
                     <p>
                       
                     </p>
@@ -53,7 +53,7 @@
                     <i class="icon-desktop icon-circled icon-64 active"></i>
                   </div>
                   <div class="text">
-                    <h6>Pelayanan Ramah</h6>
+                    <h6><font color="white">Pelayanan Ramah</font></h6>
                     <p>
                       <!-- Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea facilisis. -->
                     </p>
@@ -67,7 +67,7 @@
                     <i class="icon-beaker icon-circled icon-64 active"></i>
                   </div>
                   <div class="text">
-                    <h6>Bebas Pungli</h6>
+                    <h6><font color="white">Bebas Pungli</font></h6>
                     <p>
                       <!-- Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea facilisis. -->
                     </p>
@@ -81,7 +81,7 @@
                     <i class="icon-coffee icon-circled icon-64 active"></i>
                   </div>
                   <div class="text">
-                    <h6>Ibadah</h6>
+                    <h6><font color="white">Ibadah</font></h6>
                     <p>
                       <!-- Lorem ipsum dolor sit amet, has ei ipsum scaevola deseruisse am sea facilisis. -->
                     </p>
@@ -132,7 +132,7 @@
         </div>
 
         <!-- divider -->
-        <div class="row">
+        <div class="row ijoin">
           <div class="span12">
             <div class="solidline">
             </div>

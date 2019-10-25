@@ -695,7 +695,13 @@ section.callaction {
 #content {
   position: relative;
   background: #fff;
-  padding: 50px 0 0 0;
+  padding: 20px 0 0 0;
+}
+
+.ijoin{
+  /*background: green;*/
+ background: #23af4c;
+ 
 }
 
 #content img {
