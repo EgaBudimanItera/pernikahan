@@ -41,6 +41,7 @@
                   <tr><td width="10%">Foto</td><td>:</td></tr>
                   <tr><td colspan="3"><img src="<?=base_url()?>assets/<?= $data->foto ?>" alt="" class="img-polaroid" style="height: 200px;"/></td></tr>
                   <tr><td width="10%">Status</td><td>:</td><td> <?= $data->namastatus ?> </td></tr>
+
                 </table>
                 <br>
               <?php }; ?>
@@ -59,6 +60,7 @@
                   <tr><td width="10%">Nama</td><td>:</td><td> <?= $data->namalengkap ?> </td></tr>
                   <tr><td width="10%">Foto</td><td>:</td></tr>
                   <tr><td colspan="3"><img src="<?=base_url()?>assets/<?= $data->foto ?>" alt="" class="img-polaroid" style="height: 200px;"/></td></tr>
+                  <tr><td colspan="3">Menikah : <?=$data->tglnikah?></td></tr>
                 </table>
               </div>
             <?php }; ?>

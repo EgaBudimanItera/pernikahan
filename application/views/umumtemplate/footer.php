@@ -51,16 +51,16 @@
           </div>
           <div class="span3">
             <div class="widget">
-              <!-- <h5 class="widgetheading">Get in touch with us</h5>
+              <h5 class="widgetheading">Alamat</h5>
               <address>
-                <strong>Flattern studio, Pte Ltd</strong><br>
-                 Springville center X264, Park Ave S.01<br>
-                 Semarang 16425 Indonesia
+                <strong>KUA Tanjung Karang Barat</strong><br>
+                 Jalan Bung Tomo No 10 Gedong Air<br>
+                 Kecamatan Tanjung Karang Barat, Bandarlampung
               </address>
               <p>
-                <i class="icon-phone"></i> (123) 456-7890 - (123) 555-7891 <br>
-                <i class="icon-envelope-alt"></i> email@domainname.com
-              </p> -->
+                <i class="icon-phone"></i> (0721) 257 355 <br>
+                <i class="icon-envelope-alt"></i> 
+              </p>
             </div>
           </div>
         </div>

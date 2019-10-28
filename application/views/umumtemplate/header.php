@@ -23,8 +23,8 @@
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?=base_url()?>front/ico/apple-touch-icon-114-precomposed.png" />
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?=base_url()?>front/ico/apple-touch-icon-72-precomposed.png" />
   <link rel="apple-touch-icon-precomposed" href="<?=base_url()?>front/ico/apple-touch-icon-57-precomposed.png" />
-  <link rel="shortcut icon" href="<?=base_url()?>front/ico/favicon.png" />
-
+  <!-- <link rel="shortcut icon" href="<?=base_url()?>front/ico/favicon.png" /> -->
+  <link rel="shortcut icon" href="<?=base_url()?>front/img/lambang.png" />
   <!-- =======================================================
     Theme Name: Flattern
     Theme URL: https://bootstrapmade.com/flattern-multipurpose-bootstrap-template/
@@ -40,11 +40,7 @@
       <div class="hidden-top-inner container">
         <div class="row">
           <div class="span12">
-            <!-- <ul>
-              <li><strong>We are available for any custom works this month</strong></li>
-              <li>Main office: Springville center X264, Park Ave S.01</li>
-              <li>Call us <i class="icon-phone"></i> (123) 456-7890 - (123) 555-7891</li>
-            </ul> -->
+           <p><font size="5" color="black">SISKA (SISTEM INFORMASI STATUS PERNIKAHAN)</font></p>
           </div>
         </div>
       </div>
@@ -167,7 +163,7 @@
         <div class="row">
           <div class="span4">
             <div class="logo">
-              <a href="index.html"><!-- <img src="<?=base_url()?>front/img/logo.png" alt="" class="logo" /> --></a>
+              <a href="<?=base_url()?>"><img src="<?=base_url()?>front/ico/logo-kemenag.png"  alt="" class="logo" /></a>
               <!-- <h1>Flat and trendy bootstrap template</h1> -->
             </div>
           </div>
@@ -187,6 +183,16 @@
                       <a href="<?=base_url()?>pencarian">Pencarian Status Pernikahan</a>
                       
                     </li>
+                    <li class="dropdown <?php if($link2=="profil"){echo "active";}?>">
+                      <a href="#">Profil KUA <i class="icon-angle-down"></i></a>
+                       <ul class="dropdown-menu">
+                        <li><a href="<?=base_url()?>profil/visimisi">Visi Misi</a></li>
+                        <li><a href="<?=base_url()?>profil/sejarah">Sejarah</a></li>
+                        <li><a href="<?=base_url()?>profil/lambang">Lambang Kementrian Agama</a></li>
+                        <li><a href="<?=base_url()?>profil/struktur">Struktur Organisasi</a></li>
+                      </ul>
+                    </li>
+                    
                     <li class="dropdown <?php if($link2=="tanggapan"){echo "active";}?>">
                       <a href="<?=base_url()?>tanggapan">Beri Tanggapan </i></a>
                       
@@ -195,7 +201,7 @@
                       <a href="#">Tentang </i></a>
                     </li>
                     
-                    <li>
+                    <li>"
                       <a href="#">Kontak </a>
                     </li> -->
                   </ul>
