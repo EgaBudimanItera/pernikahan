@@ -30,6 +30,7 @@
 
   <!--DatePiker-->
   <link href="<?=base_url()?>back/bootstrap-datepicker/css/datepicker.css" rel="stylesheet">
+  <link rel="shortcut icon" href="<?=base_url()?>front/img/lambang.png" />
 
 </head>
 
@@ -43,9 +44,9 @@
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="#">
-        <div class="sidebar-brand-icon rotate-n-15">
-          <i class="fas fa-laugh-wink"></i>
-        </div>
+        <!-- <div class="sidebar-brand-icon">
+        </div> -->
+        <img src="<?=base_url()?>front/img/lambang.png"  alt="" class="logo" style="width: 15%"/>
         <div class="sidebar-brand-text mx-3">Admin Page</div>
       </a>
 
