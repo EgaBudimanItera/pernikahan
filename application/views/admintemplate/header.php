@@ -56,7 +56,7 @@
       <li class="nav-item <?php if($link=='dashboard'){echo 'active';}?>">
         <a class="nav-link" href="<?=base_url()?>dashboardadmin">
           <i class="fas fa-fw fa-tachometer-alt"></i>
-          <span>Dashboard</span></a>
+          <span>Beranda</span></a>
       </li>
 
       <!-- Divider -->

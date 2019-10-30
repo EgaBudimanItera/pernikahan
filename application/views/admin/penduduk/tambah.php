@@ -93,9 +93,9 @@
                     <div class="form-group">
                       <button type="submit" class="btn btn-primary btn-icon-split">
                         <span class="icon text-white-50">
-                          <i class="fas fa-plus"></i>
+                          <i class="fas fa-save"></i>
                         </span>
-                        <span class="text">Tambah</span>
+                        <span class="text">Simpan</span>
                       </button>
                     </div>
                     
