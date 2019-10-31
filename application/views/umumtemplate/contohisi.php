@@ -5,13 +5,13 @@
       <div id="nivo-slider">
         <div class="nivo-slider" style="max-height: 450px">
           <!-- Slide #1 image -->
-          <img src="<?=base_url()?>front/img/1.png" class="img-responsive" alt="" title="#caption-1" />
+          <img src="<?=base_url()?>front/img/5.jpg" class="img-responsive" alt="" title="#caption-1" />
           <!-- Slide #2 image -->
-          <img src="<?=base_url()?>front/img/2.png" class="img-responsive" alt=" " title="#caption-2" />
+          <img src="<?=base_url()?>front/img/6.png" class="img-responsive" alt=" " title="#caption-2" />
           <!-- Slide #3 image -->
-          <img src="<?=base_url()?>front/img/3.jpg" class="img-responsive" alt="" title="#caption-3" />
+          <img src="<?=base_url()?>front/img/7.png" class="img-responsive" alt="" title="#caption-3" />
           <!-- Slide #3 image -->
-          <img src="<?=base_url()?>front/img/4.jpg" class="img-responsive" alt="" title="#caption-3" />
+          <!-- <img src="<?=base_url()?>front/img/4.jpg" class="img-responsive" alt="" title="#caption-3" /> -->
         </div>
       </div>
       <!-- end slider -->
