@@ -36,7 +36,7 @@
           <table border="0" cellspacing="0" cellpadding="0" width="100%">
             <tr>
               <td width="50%"><p align="justify">
-            Sekilas Tentang KUA Tanjung Karang Barat
+            <h4 style="text-align: center">Sekilas Tentang KUA Tanjung Karang Barat</h4>
             <br>
             <br>
             Kantor KUA Kecamatan Tanjung Karang Barat berada di Kota Bandar Lampung Provinsi Lampung , Kantor Urusan Agama (KUA) Kecamatan Tanjung karang barat merupakan salah
@@ -44,8 +44,8 @@ satu dari 18 KUA yang ada di Kabupaten bandar lampung di dirikan pada Tahun 1980
  Dengan wilayah yang luas dan jumlah penduduk yang padat, KUA Kecamatan tanjung karang barat memiliki jumlah peristiwa nikah paling tinggi di Provinsi bandar lampung. Oleh karena itu berdasarkan Surat Keputusan Kepala Kantor Wilayah Kementerian Agama Provinsi Lampung, KUA Kecamatan tanjung karang barat ditetapkan sebagai KUA dengan tipologi  B .<br> KUA Kecamatan tanjung karang barat terletak di Jalan Bung tomo no 10, tanjung barat gedong Kecamatan tanjung karang barat bandar lampung.Berdasarkan letak geografis, KUA Kecamatan tanjung karang barat termasuk dalam kawasan bagian sebelah barat kota bandar lampung . Kecamatan tanjung karang barat merupakan daerah yang memiliki wilayah terluas ke dua setelah tanjung karang pusat dibandingkan dengan kecamatan lain yang ada di bandar lampung.  <br>
  Secara administratif luas wilayah Kecamatan tanjung karang barat adalah 24,94 Km². Adapun fungsi dari KUA Kecamatan Tanjung Karang Barat adalah melaksanakan pencatatan nikah, rujuk, pembinaan masjid, zakat, wakaf dan ibadah sosial lainnya.<br>
  Kunjungi kantor urusan agama (KUA) terdekat ini pada hari dan jam kerja untuk informasi lainnya terkait pernikahan, syarat nikah KUA, fungsi KUA, dan biaya terkait jika ada.
-Susunan personalia KUA Kecamatan Natar sebagai berikut:
-Kepala KUA :   Wawang Sanwari, S.Ag., M.Sy. 
+Susunan personalia KUA Kecamatan Tanjung Karang Barat sebagai berikut:<br>
+Kepala KUA :   Wawang Sanwari, S.Ag., M.Sy. <br>
 Penghulu :  H. HAFIZULLAH, S.Ag, M.E.Sy.
 
           </p></td>
