@@ -25,6 +25,12 @@
                     <!-- <a href="#" role="button"  class="btn btn-primary"> Add Data
                       <i class="fas fa-ellipsis-v fa-sm fa-fw text-gray-400"></i>
                     </a> -->
+                    <a href="<?=base_url()?>user/formtambah" class="btn btn-primary btn-icon-split btn-sm">
+		                <span class="icon text-white-50">
+                      		<i class="fas fa-plus"></i>
+                    	</span>
+                    	<span class="text">Tambah</span>
+		            </a>
                   </div>
                 </div>
                 <!-- Card Body -->
@@ -36,6 +42,7 @@
                       <th>No</th>
                       <th>Username</th>
                       <th>Nama Lengkap</th>
+                      <th>Aksi</th>
                     </tr>
                   </thead>
                   
@@ -48,7 +55,28 @@
                     <tr>
                       <td><?=$no?></td>
                       <td><?=$i->namauser?></td>
-                      <td><?=$i->namalengkap?></td>
+                      <td><?=$i->namalengkap?></td> <td>
+                      	
+                      	
+                      	<a href="<?=base_url()?>user/formubah/<?=$i->iduser?>" class="btn btn-warning btn-icon-split btn-sm">
+		                    <span class="icon text-white-50">
+		                      <i class="fas fa-exclamation-triangle"></i>
+		                    </span>
+		                    <span class="text">Ubah</span>
+		                </a>
+		                <a href="<?=base_url()?>user/hapus/<?=$i->iduser?>" class="btn btn-danger btn-icon-split btn-sm" onclick="return confirm('yakin akan menghapus data ini?')">
+		                    <span class="icon text-white-50">
+                      			<i class="fas fa-trash"></i>
+                    		</span>
+                    		<span class="text">Hapus</span>
+		                </a>
+		                <a href="<?=base_url()?>user/reset/<?=$i->iduser?>" class="btn btn-primary btn-icon-split btn-sm" onclick="return confirm('yakin akan mereset password ini?')">
+		                    <span class="icon text-white-50">
+                      			X
+                    		</span>
+                    		<span class="text">Reset Password</span>
+		                </a>
+                      </td>
                     </tr>
                     <?php
                     	$no++;}
