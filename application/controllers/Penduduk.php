@@ -41,7 +41,7 @@ class Penduduk extends CI_Controller {
 	public function simpan(){
 		$jumlahnik=$this->WargaModel->ceknik($this->input->post('nik',true))->num_rows();
 		
-		if($jumlahnik=='0'){
+		if($jumlahnik == 0){
 			$simpan=$this->WargaModel->simpan();
 				if($simpan){
 					echo '<script>alert("Data Berhasil Disimpan");window.location = "'.base_url().'penduduk";</script>';
