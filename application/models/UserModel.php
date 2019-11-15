@@ -53,4 +53,14 @@ class UserModel extends CI_Model
         $this->db->update('tb_user', $data); 
         return true;
     }
+    
+    public function resetPassword($namauser){
+        $data=array(
+            'password'=>123,
+        );
+    
+        $this->db->where('namauser', $namauser);
+        $this->db->update('tb_user', $data); 
+        return true;
+    }
 }

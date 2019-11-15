@@ -39,25 +39,21 @@
                 <div class="p-5">
                   <div class="text-center">
                     <img src="<?=base_url()?>front/img/lambang.png"  alt="" class="logo" />
-                    <h1 class="h4 text-gray-900 mb-4">Login Admin</h1>
+                    <h1 class="h4 text-gray-900 mb-4">Lupa Password</h1>
                   </div>
-                  <form class="user" action="<?=base_url()?>login/proseslogin" method="post">
+                  <form class="user" action="<?=base_url()?>login/reset" method="post">
                     <div class="form-group">
-                      <input type="text" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" name="namauser">
-                    </div>
-                    <div class="form-group">
-                      <input type="password" class="form-control form-control-user" id="exampleInputPassword" name="password">
-                    </div>
-                    
+                      <input type="text" class="form-control form-control-user" placeholder="Username" id="exampleInputEmail" aria-describedby="emailHelp" name="namauser">
+                    </div>                    
                     <!-- <a href="index.html" class="btn btn-success btn-user btn-block">
                       Login
                     </a> -->
-                    <button class="btn btn-success btn-user btn-block" type="submit">Login</button>
+                    <button class="btn btn-success btn-user btn-block" type="submit">Reset</button>
                     
                   </form>
 
                   <center>
-                    <a href="<?=base_url()?>login/lupapassword">Lupa Password</a>
+                    <a href="<?=base_url()?>login">Login</a>
                   </center>
                   
                 </div>

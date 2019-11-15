@@ -53,8 +53,26 @@ class Login extends CI_Controller {
         
    }
 
+   public function lupapassword()
+   {
+      $this->load->view('admin/login/formreset');
+   }
+
    public function logout(){
       $this->session->sess_destroy();
       echo '<script>alert("Terima Kasih!");window.location = "'.base_url().'login";</script>';
     }
+
+    
+
+	public function reset(){
+      $namauser=$this->input->post('namauser',true);
+		$hapus=$this->UserModel->resetPassword($namauser);
+		if($hapus){
+				echo '<script>alert("Password Berhasil Direset");window.location = "'.base_url().'login";</script>';
+		}
+		else{
+			echo '<script>alert("Password Gagal Direset");window.location = "'.base_url().'login?>";</script>';
+		}
+	}
 }
