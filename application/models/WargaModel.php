@@ -80,9 +80,8 @@ class WargaModel extends CI_Model
         return true;
     }
 
-    public function ceknik($nik){
-        $this->db->select('*')->from('tb_warga')->like('nik','$nik');
-        return $query=$this->db->get();
+    public function ceknik($nik){	    
+	return $query = $this->db->query("SELECT * FROM  tb_warga WHERE nik = '$nik'");
     }
 
     public function listall(){
