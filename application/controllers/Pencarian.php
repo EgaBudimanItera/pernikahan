@@ -23,7 +23,7 @@ class Pencarian extends CI_Controller {
 			'page'=>'umumtemplate/hasilpencarian',
 			'link'=>'/pencarian/search',
 			'link2'=>'pencarian',
-      		'isi'=>$this->PencarianModel->pencarian()->result(),
+      		'isi'=>$this->PencarianModel->pencarian(),
       		'keyword'=>$this->input->post('nik'),
     	);
     

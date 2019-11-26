@@ -30,21 +30,29 @@
         <div class="span12">
           <p><strong>Hasil Pencarian NIK: <?= $keyword ?></strong></p>
         </div>
-        <?php foreach ($isi as $key => $data) {;?>
-          <div class="span3">
-            <a href="<?=base_url()?>pencarian/detail/<?= $data->nik ?>" style="color: #656565; text-decoration: none">              
-              <img src="<?=base_url()?>assets/<?= $data->foto ?>" alt="" class="img-polaroid" />
-              <div class="roles">
-                <p>
-                  <strong><?= $data->namalengkap ?></strong>
-                </p>
-                <p>
-                <?= $data->nik ?> - <?= $data->jk ?>
-                </p>
+        <?php 
+          if($isi->num_rows()==0){
+            echo "Pencarian Dengan NIK Tersebut tidak ditemukan Karena Belum Menikah";
+          }else{
+            foreach ($isi->result() as $key => $data) {
+          ?>
+              <div class="span3">
+                <a href="<?=base_url()?>pencarian/detail/<?= $data->nik ?>" style="color: #656565; text-decoration: none">              
+                  <img src="<?=base_url()?>assets/<?= $data->foto ?>" alt="" class="img-polaroid" />
+                  <div class="roles">
+                    <p>
+                      <strong><?= $data->namalengkap ?></strong>
+                    </p>
+                    <p>
+                    <?= $data->nik ?> - <?= $data->jk ?>
+                    </p>
+                  </div>
+                </a>
               </div>
-            </a>
-          </div>
-        <?php }; ?>
+            <?php };
+          }
+         ?> 
+        
       </div>
     </div>
   </section>
